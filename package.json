@@ -1,0 +1,19 @@
+{
+  "name": "reto-marzo-scraping",
+  "version": "1.0.0",
+  "description": "Web Scraping de Productos de Despensa",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app",
+    "start": "node app"
+  },
+  "keywords": [
+    "Web Scraping",
+    "Puppeteer"
+  ],
+  "author": "Christopher Carrasco",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
