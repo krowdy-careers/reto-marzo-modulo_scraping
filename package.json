@@ -1,8 +1,7 @@
 {
   "name": "tottus-scraping",
   "version": "1.0.0",
-  "description": "",
-  "repository": {},
+  "description": "TypeScript-based web scraper using Puppeteer for data extraction from Tottus",
   "license": "MIT",
   "author": "Arnoldo",
   "type": "module",
