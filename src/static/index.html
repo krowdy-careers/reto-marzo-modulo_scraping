@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper</title>
+</head>
+<body>
+    <h1>Scraping en Proceso...</h1>
+    <p id="status">Iniciando scraping...</p>
+
+    <script>
+        // URL de la categoría de Tottus
+        const scrapingURL = "https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa";
+    
+        // Llamar automáticamente al backend al cargar la página con la URL correcta
+        fetch(`/start-scraping?url=${encodeURIComponent(scrapingURL)}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('status').innerText = 'Scraping completado: ' + JSON.stringify(data);
+            })
+            .catch(error => {
+                document.getElementById('status').innerText = 'Error en el scraping: ' + error;
+            });
+    </script>
+    
+</body>
+</html>
