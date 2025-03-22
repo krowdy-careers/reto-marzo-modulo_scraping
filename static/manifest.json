@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "reto-extension",
+  "version": "1.0",
+  "description": "aps",
+  "action": {
+    "default_popup": "./index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "contentScript.js",
+        "deepseek.js",
+        "styles.css"
+      ],
+      "type": "module",
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "file_upload.html",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "downloads",
+    "contextMenus",
+    "scripting",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

@@ -136,6 +136,6 @@ dist
 .pnp.*
 
 # pendiente
-src
-static
+# src
+# static
 notas.md

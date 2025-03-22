@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="./tailwind.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="bg-gray-100 p-8">
+  <div class="space-y-4">
+
+    <div class="flex flex-wrap justify-between gap-4 px-4">
+      <div>
+        <h1>Bienvenido</h1>
+        <button id="go-to-despensa-btn" class="link">Ir a despensa (tab nuevo)</button>
+      </div>
+
+      <div>
+        <button id="clear-storage-btn"><small>Limpiar extension storage</small></button>
+
+      </div>
+    </div>
+
+    <div class="space-y-4 p-4 bg-white rounded-lg">
+      <h2>Visitar categorías</h2>
+      <!-- <button id="now-visit-categories">now visit categories</button> -->
+      <div class="btns--steps">
+        <button id="alt-btn-navigate">1. Explorar todo y obtener items</button>
+        <button id="alt-btn-download">2. Descargar</button>
+      </div>
+      <div id="log">
+      </div>
+      <!-- <button id="start-btn">Start Navigation</button> -->
+    </div>
+
+
+    <div class="space-y-4 p-4 bg-white rounded-lg">
+
+      <h2>Scrapear solo esta página</h2>
+      <div class="btns--steps">
+        <button id="btn-scraping-tab" class="">
+          1. Enviar al Tab
+        </button>
+        <button id="btn-scraping-background" class="">
+          2. Enviar al BG
+        </button>
+        <!-- <button id="btn-scraping-data" class="">
+          3. Obtener Data
+        </button> -->
+        <button id="btn-download">3. descargar</button>
+      </div>
+
+      <h3>Resultados: <span id="nItems"></span> </h3>
+
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-50">
+          <tr>
+            <th scope="col" class="px-6 py-3 text-left  font-medium text-gray-500 uppercase ">
+              Nombre
+            </th>
+            <th scope="col" class="px-6 py-3 text-left  font-medium text-gray-500 uppercase ">
+              Marca
+            </th>
+            <th scope="col" class="px-6 py-3 text-left  font-medium text-gray-500 uppercase ">
+              Imagen
+            </th>
+            <th scope="col" class="px-6 py-3 text-left  font-medium text-gray-500 uppercase ">
+              Categoría
+            </th>
+            <th scope="col" class="px-6 py-3 text-left  font-medium text-gray-500 uppercase ">
+              Subcategoría
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tableBody" class="bg-white divide-y divide-gray-200">
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <div class="space-y-4 p-4 bg-white rounded-lg">
+      <h2>Preguntar a IA</h2>
+      <!-- <button id="openFileUpload" class="">Operaciones</button> -->
+      <p>Se implementó menu contextual. Ver README.MD para instrucciones con screenshoots.</p>
+    </div>
+  </div>
+  <script src="./popup.js"></script>
+</body>
+
+</html>
