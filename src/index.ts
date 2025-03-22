@@ -1,20 +1,18 @@
-import dotenv from "dotenv";
-
 import { createRestifyServer } from "./config/server";
-import ScraperRouter from "./routes/scraper.routes";
-// import PuppeteerCluster from "./config/cluster";
+import { PORT } from "./config/env";
 
-dotenv.config();
+import ScraperRouter from "./routes/scraper.routes";
+import OpenAiRouter from "./routes/openai.routes";
 
 async function main() {
-  // await PuppeteerCluster.initCluster();
-
   const server = createRestifyServer();
+  const port = PORT || 8080;
 
   ScraperRouter.routes(server);
+  OpenAiRouter.routes(server);
 
-  server.listen(process.env.PORT, () => {
-    console.log(`Listening at port: ${process.env.PORT}`);
+  server.listen(port, () => {
+    console.log(`Listening at port: ${port}`);
   });
 }
 
