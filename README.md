@@ -18,6 +18,12 @@ Opcional (para realizar build en cada cambio)
 yarn start
 ```
 
+## Capturas
+
+![alt text](for-readme/ui.png)
+![alt text](for-readme/ui-1.png)
+![alt text](for-readme/ui-2.png)
+
 ## Scraping
 
 Información de cada producto:  
