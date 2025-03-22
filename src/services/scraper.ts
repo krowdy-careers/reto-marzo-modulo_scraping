@@ -25,8 +25,8 @@ export async function scrapeProductsTotus(baseUrl: string): Promise<Product[]> {
   }
 
   let products: Product[] = [];
-  let card_product = "div.jsx-1068418086.search-results-4-grid.grid-pod"
-
+  //let card_product = "div.jsx-1068418086.search-results-4-grid.grid-pod"
+ let card_product = 'div[pod-layout="4_GRID"]';
   
 /*
   let p = document.querySelectorAll(card_product);
@@ -37,26 +37,34 @@ export async function scrapeProductsTotus(baseUrl: string): Promise<Product[]> {
 
   //congigurar la tarea para el cluster
    await cluster.task(async ({ page, data: url }) => {
-
+    try {
+   
     await page.setUserAgent(
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
     );
     console.log(`🔎 Abriendo página: ${url}`);
 
 
-    try {
+  
       await page.goto(url, { waitUntil: "domcontentloaded" ,timeout:90000});
+      // Verificar si realmente se cargó la página
+      const pageUrl = page.url();
+      console.log(`📄 URL actual en Puppeteer: ${pageUrl}`);
+      if (pageUrl === 'about:blank') {
+          throw new Error("❌ La página no se cargó correctamente.");
+      }
 
       console.log("🔄 Haciendo scroll para cargar productos...");
       await page.evaluate(() => {
           window.scrollBy(0, window.innerHeight);
       });
-      const count = await page.evaluate(() => document.querySelectorAll(card_product).length);
+      await page.waitForSelector(card_product,{timeout:5000});
+      const count = await page.evaluate(() => document.querySelectorAll('div[pod-layout="4_GRID"]').length);
       console.log(`Total de productos encontrados en la página: ${count}`);
 
       const items = await page.$$eval(card_product, elements =>
         elements.map(el => {
-          const subcategoria = el.querySelector('.subcategoria')?.textContent?.trim() || 'none';
+          const subcategoria = "buscando"//el.querySelector('.subcategoria')?.textContent?.trim() || 'none';
           const name = el.children?.[0]?.children?.[1]?.children?.[0]?.children?.[1]?.textContent?.trim() || 'none';
           const marca = el.children?.[0]?.children?.[1]?.children?.[0]?.children?.[0]?.textContent?.trim() || '';
           const imagenUrl = el.querySelector('img')?.getAttribute("src")||'none';
