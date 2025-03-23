@@ -7,7 +7,7 @@ puppeteer.use(StealhPlugin());
 export const initCluster = async (): Promise<Cluster> => {
   const cluster = await Cluster.launch({
     concurrency: Cluster.CONCURRENCY_CONTEXT,
-    maxConcurrency: 5,
+    maxConcurrency: 4,
     puppeteerOptions: {
       headless: true,
       args: [
