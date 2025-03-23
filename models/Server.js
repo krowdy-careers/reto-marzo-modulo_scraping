@@ -8,6 +8,7 @@ class Server {
 
     this.paths = {
       extractData: "/api/extract-data",
+      extractCategory: "/api/extract-category",
       extractRange: "/api/extract-range",
       classifyPackaging: "/api/classify-packaging",
       saveCsv: "/api/save-csv",
@@ -26,6 +27,7 @@ class Server {
 
   routes() {
     this.app.use(this.paths.extractData, require("../routes/extractData"));
+    this.app.use(this.paths.extractCategory, require("../routes/extractCategory"));
     this.app.use(this.paths.extractRange, require("../routes/extractRange"));
     this.app.use(this.paths.classifyPackaging, require("../routes/classifyPackaging"));
     this.app.use(this.paths.saveCsv, require("../routes/saveCsv"));
