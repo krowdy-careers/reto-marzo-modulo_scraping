@@ -1,33 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Scraper</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1>Scraping en Proceso...</h1>
-    <p id="status">Iniciando scraping...</p>
+    <div class="container">
+        <h1>Web Scraper</h1>
 
+        <div class="input-group">
+            <input id="api-key" type="password" placeholder="Ingresa tu API Key..." required>
+            <button id="start-scraping">Iniciar Scraping</button>
+        </div>
 
+        <div class="download-buttons">
+            <button id="dw-json" disabled>Descargar JSON</button>
+            <button id="dw-csv" disabled>Descargar CSV</button>
+        </div>
 
+        <div class="status-container">
+            <p id="status">Esperando inicio...</p>
+        </div>
 
-    
+        <div id="preview"></div>
+    </div>
 
     <script>
-        // URL de la categoría de Tottus
-        const scrapingURL = "https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa";
-    
-        // Llamar automáticamente al backend al cargar la página con la URL correcta
-        fetch(`/start-scraping?url=${encodeURIComponent(scrapingURL)}`)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('status').innerText = 'Scraping completado: ' + JSON.stringify(data);
-            })
-            .catch(error => {
-                document.getElementById('status').innerText = 'Error en el scraping: ' + error;
-            });
+
+
+
+        document.getElementById("start-scraping").addEventListener("click", async () => {
+            const apiKeyInput = document.getElementById("api-key");
+            let apiKey = apiKeyInput.value.trim();
+
+            if (!apiKey) {
+                alert("Por favor, ingresa tu API Key.");
+                return;
+            }
+
+            document.getElementById("status").innerText = "⏳ Iniciando scraping...";
+            document.getElementById("status").classList.add("loading");
+
+            try {
+                apiKeyInput.value = "";
+                const response = await fetch(`/start-scraping?apiKey=${encodeURIComponent(apiKey)}`);
+
+                const data = await response.json();
+
+                document.getElementById("status").innerText = "✅ Scraping completado.";
+                document.getElementById("status").classList.remove("loading");
+                document.getElementById("status").classList.add("success");
+
+                document.getElementById("preview").innerHTML = `<pre>${JSON.stringify(data, null, 4)}</pre>`;
+
+                document.getElementById("dw-json").disabled = false;
+                document.getElementById("dw-csv").disabled = false;
+            } catch (error) {
+                document.getElementById("status").innerText = "❌ Error en el scraping";
+                document.getElementById("status").classList.add("error");
+            }
+        });
+
+        
+
+        document.getElementById("dw-json").addEventListener("click", async () => {
+            try {
+                document.getElementById("status").innerText = "⏳ Descargando JSON...";
+                document.getElementById("status").classList.add("loading");
+                document.getElementById("status").classList.remove("success", "error");
+
+                // Utilizamos directamente la redirección para JSON
+                window.location.href = "/download-json";
+
+                // Actualizamos el estado después de un breve retraso para dar tiempo a la descarga
+                setTimeout(() => {
+                    document.getElementById("status").innerText = "✅ Descarga JSON solicitada";
+                    document.getElementById("status").classList.remove("loading");
+                    document.getElementById("status").classList.add("success");
+                }, 1500);
+
+            } catch (error) {
+                console.error("Error de descarga:", error);
+                document.getElementById("status").innerText = `❌ Error: ${error.message || "Descarga fallida"}`;
+                document.getElementById("status").classList.remove("loading");
+                document.getElementById("status").classList.add("error");
+            }
+        });
+
+        document.getElementById("dw-csv").addEventListener("click", async () => {
+            try {
+                document.getElementById("status").innerText = "⏳ Descargando CSV...";
+                document.getElementById("status").classList.add("loading");
+                document.getElementById("status").classList.remove("success", "error");
+
+                const response = await fetch("/download-csv");
+
+                // Verificamos si la respuesta tiene un tipo de contenido JSON (indicaría un error)
+                const contentType = response.headers.get("content-type");
+                if (contentType && contentType.includes("application/json")) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || "Error desconocido");
+                }
+
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.style.display = "none";
+                a.href = url;
+                a.download = "products.csv";
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+
+                document.getElementById("status").innerText = "✅ Descarga CSV completada";
+                document.getElementById("status").classList.remove("loading");
+                document.getElementById("status").classList.add("success");
+            } catch (error) {
+                console.error("Error de descarga:", error);
+                document.getElementById("status").innerText = `❌ Error: ${error.message || "Descarga fallida"}`;
+                document.getElementById("status").classList.remove("loading");
+                document.getElementById("status").classList.add("error");
+            }
+        });
     </script>
-    
 </body>
+
 </html>

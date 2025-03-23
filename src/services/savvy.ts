@@ -1,15 +1,7 @@
 
-/*
-let b= document.querySelector("div.jsx-2929192365.pods-container") // for obtaien button of categories
-
-b?.children[0].children[0].click():
-let t=document.getElementById("testId-CategoryTitle-container") // div -for category adn subcategory
-
-t?.children[0].textContent
-t?.children[1]?.textContent
-*/
 import { cluster, initCluster } from "../config/cluster";
 
+// this function send all ulrs of subcategories of Despensa
 export async function getSubcategoryUrls(baseUrl: string): Promise<string[]> {
   console.log("🟢 Iniciando getSubcategoryUrls...");
   if (!cluster) {

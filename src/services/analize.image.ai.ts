@@ -1,17 +1,29 @@
-const IA_API_KEY = 'TU_API_KEY';
-const IA_API_URL = 'URL_DE_LA_API_DE_IA';
 
- export async function clasificarEmpaque(imagenUrl: string): Promise<boolean> {
-  // Lógica para enviar la imagen a la API de IA y determinar si el empaque es flexible
-  const response = await fetch(IA_API_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${IA_API_KEY}`
-    },
-    body: JSON.stringify({ imageUrl: imagenUrl })
-  });
+// use chatGPT for know if packing of products is flexible
+export async function clasificarEmpaque(imagenUrl: string, nombreProducto: string, apiKey: string): Promise<boolean> {
+  let prompt = imagenUrl !== 'none' 
+      ? `Analiza la imagen y responde si el empaque es flexible. Responde "true" o "false". Imagen: ${imagenUrl}`
+      : `Basado en el nombre del producto "${nombreProducto}", responde si el empaque es flexible. Responde "true" o "false".`;
 
-  const data = await response.json();
-  return data.isFlexible;
+  try {
+      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${apiKey}`
+          },
+          body: JSON.stringify({
+              model: "gpt-4-turbo",
+              messages: [{ role: "user", content: prompt }],
+              temperature: 0
+          })
+      });
+
+      const data = await response.json();
+      const respuesta = data.choices?.[0]?.message?.content?.trim().toLowerCase();
+      return respuesta === "true";
+  } catch (error) {
+      console.error("Error al clasificar empaque:", error);
+      return false;
+  }
 }

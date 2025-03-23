@@ -1,6 +1,8 @@
 import {cluster} from '../config/cluster'
-import puppeteer, { Page } from "puppeteer";
+import  { Page } from "puppeteer";
 
+
+//this function obtain number of pages each tab for subcategory
 export async function getTotalPages(baseUrl: string): Promise<number> {
   console.log("🔍 Obteniendo número total de páginas...");
   let totalPages = 1;
@@ -16,10 +18,10 @@ export async function getTotalPages(baseUrl: string): Promise<number> {
       
       await page.goto(baseUrl, { waitUntil: "domcontentloaded" });
       
-      // Ejecutar la lógica de paginación en el contexto del navegador
+      
       return await page.evaluate(() => {
         try {
-          // Método 1: Intentar obtener el último número de página desde la navegación
+          // Method 1: try get the last number of page from navigation.
           const paginationSelector = "ol.jsx-1389196899.jsx-2796234256";
           const paginationElement = document.querySelector(paginationSelector);
           
@@ -32,7 +34,7 @@ export async function getTotalPages(baseUrl: string): Promise<number> {
             }
           }
           
-          // Método 2: Calcular basado en el número total de resultados y elementos por página
+          // Method 2: Compute relie  in total numbers of resulsts and elements per page
           const searchResultsElement = document.getElementById("search_numResults");
           if (searchResultsElement && searchResultsElement.textContent) {
             const resultsText = searchResultsElement.textContent.trim();
@@ -60,17 +62,17 @@ export async function getTotalPages(baseUrl: string): Promise<number> {
           
           return 1;
         } catch (error) {
-          console.error("Error al obtener el total de páginas:", error);
+          console.error("Error obtained total pages:", error);
           return 1;
         }
       });
     });
     
-    console.log(`📊 Total de páginas encontradas: ${totalPages}`);
+    console.log(`📊 Total  pages found: ${totalPages}`);
     return totalPages;
   } catch (error) {
-    console.error("❌ Error al obtener el total de páginas:", error);
-    console.log("⚠️ Continuando con valor predeterminado de 1 página");
+    console.error("❌ Error :", error);
+    console.log("⚠️ Continue with default value 1");
     return 1;
   }
 }

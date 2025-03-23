@@ -4,7 +4,10 @@ import {scrapeProductsTotus} from './scraper.subcategory'
 import {getSubcategoryUrls} from '../services/savvy'
 import { Product } from '../models/product';
 import {initCluster,cluster} from '../config/cluster'
- export async function scrapeAllProducts(baseUrl:string) {console.log("🚀 Iniciando proceso completo de scraping...");
+ export async function scrapeAllProducts(baseUrl:string, apikey:string) {
+  
+  
+  
   
     // Inicializar el cluster una sola vez
     if (!cluster) {
@@ -12,26 +15,29 @@ import {initCluster,cluster} from '../config/cluster'
       await initCluster();
     }
     
-    // Primero obtenemos todas las URLs de subcategorías
+    //Fist of all obtained all ulrs of subcategories 
+     /*
+     * like: aceites, harinas , etc ...
+     */
     console.log("📂 Obteniendo URLs de subcategorías...");
     const subcategoryUrls = await getSubcategoryUrls(baseUrl);
     console.log(`📊 Se encontraron ${subcategoryUrls.length} subcategorías para procesar`);
     
-    // Verificación extra de las URLs obtenidas
+    
     if (subcategoryUrls.length === 0) {
-      console.log("❌ No se encontraron subcategorías. Verificando categoría principal...");
-      return await scrapeProductsTotus(baseUrl);
+      console.log("❌ Sub categorie sno found. Now start scraping  main category Despensa...");
+      return await scrapeProductsTotus(baseUrl, apikey);
     }
     
-    // Luego hacemos scraping de cada subcategoría
     
-
+    
+    //Then  scraping each subcategory
     const allProducts: Product[] = [];
     for (const url of subcategoryUrls) {
-        const products = await scrapeProductsTotus(url);
+        const products = await scrapeProductsTotus(url,apikey);
         allProducts.push(...products);
     }
 
-    console.log(`✅ Scraping finalizado. Total de productos obtenidos: ${allProducts.length}`);
+    console.log(`✅ Scraping finished. Total of products obtained: ${allProducts.length}`);
     return allProducts;
 }

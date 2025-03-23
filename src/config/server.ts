@@ -1,6 +1,7 @@
 
 import * as restify from 'restify'
 
+// create the server
 export const createServer=()=>{
 
     const server =restify.createServer({name:"a",version:"1.0.0"});

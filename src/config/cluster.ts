@@ -6,7 +6,7 @@ export let cluster:Cluster;
 
 
 puppeteer.use(StealthPlugin());
-
+// init cluster of puppteeer
 export const initCluster=async () =>{
 
     console.log("🔵 Inicializando Puppeteer Cluster...");
