@@ -13,7 +13,11 @@ export class ProductoService {
       subcategory: subcategory.trim(),
       name: rawProduct.name.trim(),
       brand: rawProduct.brand.trim(),
-      image: rawProduct.image.trim(),
+      image: rawProduct.image
+        .trim()
+        .replace(/w=\d+/, 'w=500')
+        .replace(/h=\d+/, 'h=500')
+        .replace(/fit=pad/, 'format=jpg'),
       isFlexible: await this.isFlexible(rawProduct),
     } as ProductDto;
   }

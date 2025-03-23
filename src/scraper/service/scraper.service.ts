@@ -1,7 +1,8 @@
-import puppeteer, { Browser, Page } from 'puppeteer';
+import { Browser, Page } from 'puppeteer';
 import { SelectorBuilder } from '../../utils/selector-builder.js';
 import { ProductDto } from '../../product/dto/product.dto.js';
 import { ProductoService } from '../../product/service/product.service.js';
+import { RawProductDto } from '../../product/dto/raw-product.dto.js';
 
 export class ScraperService {
   private browser: Browser;
@@ -15,6 +16,28 @@ export class ScraperService {
     this.productService = productService;
   }
 
+  async setPageDetails(): Promise<Page> {
+    const pageDetails = await this.browser.newPage();
+    await pageDetails.setRequestInterception(true);
+    pageDetails.on('request', (req) => {
+      if (
+        req.resourceType() === 'stylesheet' ||
+        req.resourceType() === 'font' ||
+        req.resourceType() === 'media' ||
+        req.resourceType() === 'script'
+      ) {
+        req.abort();
+      } else {
+        req.continue();
+      }
+    });
+    return pageDetails;
+  }
+
+  async resetPage(page: Page): Promise<void> {
+    await page.goto('about:blank');
+  }
+
   private async getPageCategory(page: Page): Promise<string> {
     const selector = new SelectorBuilder('[data-testid=breadcrumbs]')
       .descendant('li:last-child')
@@ -26,13 +49,25 @@ export class ScraperService {
     });
   }
 
-  private async getProductSubcategory(
+  private async getProductDetails(
     page: Page,
     productUrl: string,
-  ): Promise<string> {
-    await page.goto(productUrl);
+  ): Promise<[string, string]> {
+    await this.resetPage(page);
+    await page.goto(productUrl, { waitUntil: 'domcontentloaded' });
 
-    return this.getPageCategory(page);
+    const subcategory = await this.getPageCategory(page);
+
+    const selector = new SelectorBuilder('.headline-wrapper')
+      .descendant('img')
+      .build();
+
+    const image = await page.$eval(
+      selector,
+      (element) => element.getAttribute('src')?.trim() || '',
+    );
+
+    return [subcategory, image];
   }
 
   private async getTotalPages(page: Page): Promise<number> {
@@ -53,8 +88,10 @@ export class ScraperService {
     page: Page,
     pageNumber: number,
     category: string,
+    pageDetails: Page,
   ): Promise<ProductDto[]> {
     const pageUrl = `${this.baseUrl}?page=${pageNumber}`;
+    await this.resetPage(page);
     await page.goto(pageUrl);
 
     const selector = new SelectorBuilder('.search-results--products')
@@ -69,82 +106,64 @@ export class ScraperService {
 
     const rawProducts = await page.$$eval(selector, (elements) => {
       return elements.map((element) => ({
-        name: element.querySelector('.subTitle-rebrand')?.textContent || '',
-        brand: element.querySelector('.title-rebrand')?.textContent || '',
-        image: element.querySelector('img')?.getAttribute('src') || '',
+        name:
+          element.querySelector('.subTitle-rebrand')?.textContent?.trim() || '',
+        brand:
+          element.querySelector('.title-rebrand')?.textContent?.trim() || '',
       }));
     });
 
     const products: ProductDto[] = [];
-    const detailsPage = await this.browser.newPage();
 
     for (const [index, productUrl] of productUrls.entries()) {
       try {
         const rawProduct = rawProducts[index];
-        const subcategory = await this.getProductSubcategory(
-          detailsPage,
+        const [subcategory, image] = await this.getProductDetails(
+          pageDetails,
           productUrl,
         );
 
         const product = await this.productService.processProduct(
           category,
           subcategory,
-          rawProduct,
+          { ...rawProduct, image } as RawProductDto,
         );
 
         products.push(product);
-        console.log(products[products.length - 1]);
+        console.log(product);
       } catch (error) {
         console.error('Error obteniendo detalles:', error);
       }
     }
-
-    detailsPage.close();
     return products;
   }
 
-  private async getProductsFromCategory(page: Page): Promise<ProductDto[]> {
+  public async getProductsFromCategory(page: Page): Promise<ProductDto[]> {
+    const pageDetails = await this.setPageDetails();
+    await page.bringToFront();
+
+    await page.goto(this.baseUrl, { waitUntil: 'domcontentloaded' });
     const totalPages = await this.getTotalPages(page);
     const products: ProductDto[] = [];
+    const category = await this.getPageCategory(page);
 
     for (let pageNumber = 1; pageNumber <= totalPages; pageNumber++) {
       console.log(`Scraping página ${pageNumber} de ${totalPages}...`);
-
-      const category = await this.getPageCategory(page);
 
       try {
         const productsFromPage = await this.getProductsFromPage(
           page,
           pageNumber,
           category,
+          pageDetails,
         );
         products.push(...productsFromPage);
       } catch (error) {
         console.error(`Error scraping página ${pageNumber}:`, error);
       }
     }
+    await pageDetails.close();
 
     return products;
-  }
-
-  async execute(): Promise<void> {
-    this.browser = await puppeteer.launch();
-
-    console.log('Iniciando scraping...');
-    try {
-      const pageMain = await this.browser.newPage();
-      await pageMain.goto(this.baseUrl);
-
-      const allProducts = await this.getProductsFromCategory(pageMain);
-
-      console.log(`Total de productos extraídos: ${allProducts.length}`);
-    } catch (error) {
-      console.error('Error durante la ejecución del scraping:', error);
-    } finally {
-      if (this.browser) {
-        await this.browser.close();
-      }
-      console.log('Scraping finalizado.');
-    }
   }
 }

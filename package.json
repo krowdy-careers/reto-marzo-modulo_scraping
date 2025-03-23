@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "class-validator": "^0.14.1",
+    "csv-writer": "^1.6.0",
     "puppeteer": "^24.4.0"
   }
 }
