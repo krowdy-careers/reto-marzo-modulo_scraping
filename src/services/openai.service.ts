@@ -4,16 +4,15 @@ import { OPENAI_API_KEY } from "../config/env";
 
 const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 
+
 class OpenAiService {
+  /**
+   * Determines if a product package is flexible or not using OpenAI Vision API
+   * @param imageUrl The URL of the product image
+   * @returns {Promise<boolean>} True if the package is flexible, false otherwise
+   */
   static async isFlexiblePackage(imageUrl: string): Promise<boolean> {
-
-    console.log(imageUrl);
-
     try {
-      if (!imageUrl) {
-        return false;
-      }
-
       const response = await openai.chat.completions.create({
         model: "gpt-4-turbo",
         messages: [

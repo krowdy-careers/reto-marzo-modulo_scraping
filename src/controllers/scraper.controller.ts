@@ -14,11 +14,11 @@ class ScraperController {
         if (err) console.log(err);
       });
 
-      res.send(200, { data: data, success: true });
+      res.send(200, { success: true, data: data });
     } catch (error: any) {
-      console.log(error);
+      console.error(error);
 
-      res.send(500, { error: (error as Error).message, success: false });
+      res.send(500, { success: false, error: (error as Error).message });
     }
 
     return next();

@@ -5,7 +5,6 @@ import puppeteer from "puppeteer-extra";
 puppeteer.use(StealthPlugin());
 
 class PuppeteerCluster {
-
   static async launchCluster() {
     return await Cluster.launch({
       concurrency: Cluster.CONCURRENCY_CONTEXT,

@@ -3,6 +3,9 @@ import { scrollPageToBottom, scrollPageToTop } from "puppeteer-autoscroll-down";
 
 import PuppeteerCluster from "../config/cluster";
 
+/**
+ * List of product categories to scrape
+ */
 const categoryList = [
   "Aceites",
   "Conservas y enlatados",
@@ -14,6 +17,9 @@ const categoryList = [
   "Azúcar y endulzantes",
 ];
 
+/**
+ * Represents a single product scraped from the website
+ */
 type Product = {
   brand: string;
   name: string;
@@ -24,6 +30,11 @@ type Product = {
 };
 
 class ScraperService {
+  /**
+   * Scrapes product data from a single page
+   * @param {Page} page The Puppeteer page instance
+   * @returns {Promise<Product[]>} A promise that resolves with an array of scraped products
+   */
   private static async scrapeSinglePage(page: Page): Promise<Product[]> {
     await page.waitForSelector(".pod-group--products", { visible: true });
 
@@ -58,11 +69,16 @@ class ScraperService {
     });
 
   }
-
+  /**
+   * Scrapes all products from a specific category, handling pagination.
+   * @param {Page} page The Puppeteer page instance
+   * @param {string} categoryName The category name to scrape
+   * @returns {Promise<Product[]>} A promise that resolves with an array of scraped products
+   */
   private static async getItemsByCategory(page: Page, categoryName: string): Promise<Product[]> {
     let values: Product[] = [];
-    let lastPage = 1;
 
+    // Clicks the category based on it's text content
     await page.evaluate((category: string) => {
       const h3Arr = Array.from(document.querySelectorAll("h3"));
       const target = h3Arr.find((el) => el.textContent?.trim() === category);
@@ -70,10 +86,10 @@ class ScraperService {
       target?.click();
     }, categoryName);
 
-    // await page.waitForNavigation({ waitUntil: "domcontentloaded" });
-
     await page.waitForSelector(".pagination");
-    lastPage = await page.evaluate(() => {
+
+    // Get last page from pagination
+    const lastPage = await page.evaluate(() => {
       const pagination = document.querySelectorAll("#testId-searchResults-actionBar-bottom .pagination ol li");
 
       if (pagination.length > 1) {
@@ -86,20 +102,33 @@ class ScraperService {
       return 1;
     });
 
-    let pageUrl = page.url();
-
+    const pageUrl = page.url();
     for (let currentPage = 1; currentPage <= lastPage; currentPage++) {
-      await page.goto(`${pageUrl}&page=${currentPage}`);
+      try {
+        await page.goto(`${pageUrl}&page=${currentPage}`);
+        const productsOnPage = await this.scrapeSinglePage(page);
 
-      values = values.concat(await this.scrapeSinglePage(page));
+        values = values.concat(productsOnPage);
+      } catch (error: any) {
+        throw new Error(error.message);
+      }
     }
 
     return values;
   }
 
-  static async getAllItems(url: string): Promise<Product[][]> {
+  /**
+   * Scrapes all items across multiple categories using Puppeteer Cluster
+   * @param {string} url The base url of the website
+   * @returns {Promise<Product[]>} A promise that resolves with an array of all scraped products
+   */
+  static async getAllItems(url: string): Promise<Product[]> {
     const browser = await PuppeteerCluster.launchCluster();
     let productsData: Product[][] = [];
+
+    categoryList.forEach((category: string) => {
+      browser.queue({ category });
+    })
 
     await browser.task(async ({ page, data }) => {
       await page.goto(url);
@@ -109,15 +138,11 @@ class ScraperService {
       );
     });
 
-    categoryList.forEach(category => {
-      browser.queue({ category });
-    })
-    // browser.queue({ category: "Vinagres, aderezos y condimentos"});
-
     await browser.idle();
     await browser.close();
 
-    return productsData;
+    // Flatten the array before returning
+    return productsData.flat();
   }
 }
 
