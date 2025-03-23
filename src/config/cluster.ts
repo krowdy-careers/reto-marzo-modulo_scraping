@@ -9,7 +9,7 @@ export const initCluster = async (): Promise<Cluster> => {
     concurrency: Cluster.CONCURRENCY_CONTEXT,
     maxConcurrency: 5,
     puppeteerOptions: {
-      headless: false,
+      headless: true,
       args: [
         "--no-sandbox",
         "--start-maximized",
