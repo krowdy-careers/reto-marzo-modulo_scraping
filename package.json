@@ -8,8 +8,11 @@
     "build": "tsc",
     "dev": "ts-node-dev --respawn src/index.ts",
     "serve": "node dist/index.js"
+      
   },
   "dependencies": {
+    "@huggingface/inference": "^3.6.1",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "puppeteer": "^24.4.0",
     "puppeteer-cluster": "^0.24.0",
