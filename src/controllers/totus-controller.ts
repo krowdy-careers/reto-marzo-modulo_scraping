@@ -1,5 +1,6 @@
 import { Request, Response, Next } from 'restify';
-import { scrapeProductsTotus } from '../services/scraper';
+import { scrapeProductsTotus } from '../services/scraper.subcategory';
+import {scrapeAllProducts} from '../services/scraper.totus'
 export const totusScrapePage = async (req: Request, res: Response, next: Next) => {
    
     try {
@@ -13,7 +14,7 @@ export const totusScrapePage = async (req: Request, res: Response, next: Next) =
 
         console.log(`🚀 Iniciando scraping en: ${url}`);
 
-        const data = await scrapeProductsTotus(url);
+        const data = await scrapeAllProducts(url);
 
         console.log("✅ Enviando respuesta al cliente...");
         res.send(200, data);
