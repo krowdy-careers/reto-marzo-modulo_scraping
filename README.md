@@ -40,7 +40,7 @@ Este proyecto utiliza Node.js y Express para realizar web scraping y clasificaci
 - **GET /scrape** → Ejecuta el proceso de scraping.
 - **GET /classify** → Clasifica los productos obtenidos mediante IA.
 
-###📌 Funcionalidades principales:
+## 📌 Funcionalidades principales:
 
 - **Scraping con Puppeteer y Puppeteer Cluster**: Obtiene datos de productos mediante múltiples instancias en paralelo.
 - **Clasificación con Hugging Face Inference API**: Analiza las imágenes de los productos y añade un campo de true o false.
