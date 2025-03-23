@@ -1,13 +1,19 @@
+import { OpenAIUtil } from '../../utils/openai-util.js';
 import { ProductDto } from '../dto/product.dto.js';
 import { RawProductDto } from '../dto/raw-product.dto.js';
 
 export class ProductoService {
+  private openaiUtil: OpenAIUtil;
+
+  constructor() {
+    this.openaiUtil = new OpenAIUtil();
+  }
+
   async processProduct(
     category: string,
     subcategory: string,
     rawProduct: RawProductDto,
   ): Promise<ProductDto> {
-    /* TO DO: Process Data*/
     return {
       category: category.split('-')[0].trim(),
       subcategory: subcategory.trim(),
@@ -23,7 +29,13 @@ export class ProductoService {
   }
 
   private async isFlexible(rawProductDto: RawProductDto): Promise<boolean> {
-    /* TO DO: Implement AI API */
-    return rawProductDto.image ? true : false;
+    const prompt =
+      'Is the object in the image flexible? Answer only with true or false.\nAnswer: true or false';
+    const response = await this.openaiUtil.generateResponse(
+      prompt,
+      rawProductDto.image,
+    );
+    console.log(response);
+    return response.toLowerCase() === 'true';
   }
 }

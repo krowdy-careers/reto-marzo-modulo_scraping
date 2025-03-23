@@ -11,7 +11,7 @@
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "format": "prettier --write .",
     "build": "tsc --build",
-    "start": "node dist/app.js"
+    "start": "node --env-file=.env dist/app.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -28,6 +28,7 @@
   "dependencies": {
     "class-validator": "^0.14.1",
     "csv-writer": "^1.6.0",
+    "openai": "^4.89.0",
     "puppeteer": "^24.4.0"
   }
 }
