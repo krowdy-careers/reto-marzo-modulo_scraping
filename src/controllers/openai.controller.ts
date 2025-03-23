@@ -11,7 +11,7 @@ class OpenAiController {
 
       const response = await OpenAiService.isFlexiblePackage(imageUrl);
 
-      res.send(200, { success: true, resullt: response, imageUrl: imageUrl });
+      res.send(200, { success: true, isFlexible: response, imageUrl: imageUrl });
     } catch (error: any) {
       console.error(error);
 
