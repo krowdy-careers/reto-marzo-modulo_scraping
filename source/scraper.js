@@ -22,6 +22,10 @@ const uniqueImage = 'img.jsx-2487856160'
 let allProducts = [];
 
 async function ProcessUniqueProduct(page, category, subcategory, categoryUrl) {
+    
+    //Ya sea con una categoria o una subcategoria, puede suceder que estas tengan un solo objeto enlistado en la pagina,
+    //por lo que el diseño de la pagina y la obtencion de la data es distinta. Es necesario ver otros campos. 
+    //En este caso en particular, se busca la tabla que contenga en alguna de sus filas el nombre de la marca especificado. 
 
     await page.waitForFunction(() => document.readyState === "complete");
 
@@ -64,6 +68,12 @@ async function ProcessUniqueProduct(page, category, subcategory, categoryUrl) {
 
 
 async function SubCategoryIteration(page, categoryName, categoryUrl) {
+
+    //Cada categoria puede contener una subcategoria, y para eso es necesario direccionarnos a los enlaces
+    //a los que estos botones apuntan. El proceso es similar al de la seleccion de botones en las categorias.
+    //Puede darse el caso en que una categoria no tenga subcategorias, por lo que esta funcion devuelve un false
+    //procediendo automaticamente con el enlistado de los atributos de cada producto en la pagina 
+
     console.log(`Buscando subcategorias en: ${categoryName}`);
 
     try {
@@ -114,7 +124,12 @@ async function SubCategoryIteration(page, categoryName, categoryUrl) {
     return true;
 }
 
-async function CategoryIteration(page) {
+async function CategoryIteration(page) { 
+
+    // Vamos a identificar primero los botones de cada categoria, y empezar a hacer click uno a uno
+    // entrando a sus respectivos enlaces de direccionamiento, para luego volver a la pagina principal
+    // y hacer click en el siguiente boton de categoria. Esto se repite hasta que ya no hayan mas categorias
+
     console.log("Buscando categorias...");
 
     try {
@@ -168,6 +183,14 @@ async function CategoryIteration(page) {
 }
 
 async function CheckProducts(page, category, subcategory, categoryUrl) {
+
+    //Procesar los productos en la pagina de Tottus puede tener dos maneras: usualmente se presentan en forma de matriz,
+    //o tienen una pagina entera para si mismo cuando es un producto unico en su categoria o subcategoria.
+    //Esta funcion se encarga de verificar si la pagina a la que entramos tiene el boton de SIGUIENTE PAGINA activo o existente,
+    //y en base a ello se decide si luego del procesamiento de varios productos avanzamos a la siguiente pagina, si
+    //hemos llegado a la pagina final y ya no hay mas productos por ver despues, o si la categoria o subcategoria a la que hemos entrado solo
+    //tiene un unico producto
+
     console.log(`Iniciando paginacion en: ${subcategory}`);
 
     while (true) {
@@ -200,6 +223,12 @@ async function CheckProducts(page, category, subcategory, categoryUrl) {
 }
 
 async function GetProductstData(page, category, subcategory) {
+
+    //Si identificamos que la pagina en donde estamos tiene mas de un producto por procesar, entonces esta funcion recorra
+    //todo los elementos asociado con las clases necesarias para identificar cada uno de los productos, extrayendo en el proceso sus datos.
+    //La pagina se carga dinamicamente mientras se hace scroll, por lo que se implemento una funcion que hace esto automaticamente como apoyo.
+    //Si la carga de imagenes falla en alguno de los objetos, se vuelve a intentar hasta 10 veces.
+
     console.log(`Obteniendo productos de: ${subcategory}`);
 
     await page.waitForFunction(() => document.readyState === "complete");
@@ -240,6 +269,9 @@ async function GetProductstData(page, category, subcategory) {
 }
 
 async function AutoScroll(page) {
+
+    //Funcion de scroll configurable para la carga de imagenes
+
     await page.evaluate(async () => {
         await new Promise(resolve => {
             let totalHeight = 0;
@@ -263,13 +295,17 @@ async function AutoScroll(page) {
 }
 
 async function SaveToJSON() {
+
+    //El arreglo en donde hemos procesado todos los productos lo enviamos a un script que usa el
+    //servicio de AWS cloud llamado AWS Rekognition. Las primeras ejecuciones son gratuitas y luego
+    //se empieza a cobrar por su uso. Al terminar, todo se guarda en un archivo json ubicado en source.
     
     const analyzedProducts = await analyzeImages(allProducts);
 
     fs.writeFileSync('productos.json', JSON.stringify(analyzedProducts, null, 2));
 }
 
-async function StartScraping() {
+async function StartScraping() { // Abrimos el navegador y seteamos un tamaño de ventana
 
     const browser = await launch({ headless: false });
     const page = await browser.newPage();
@@ -284,4 +320,4 @@ async function StartScraping() {
     await browser.close();
 }
 
-StartScraping();
+StartScraping(); // Iniciamos el proceso de scraping
