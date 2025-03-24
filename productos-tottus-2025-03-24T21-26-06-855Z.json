@@ -1,0 +1,386 @@
+[
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "NONGSHIM",
+    "nombre": "Sopa Instantánea Sabor Carne Verduras Picante Nong Shim 120g",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40365440_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "PIKI",
+    "nombre": "Ají Amarillo Molido 350 g",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40444390_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "Sí"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "BIOSAL",
+    "nombre": "Sal 850 g",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40354448_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "NATURES HEART",
+    "nombre": "INFUSION HERB SURTIDO CAJA X 20UND",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42848971_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "UNIVERSAL",
+    "nombre": "Gelatina Diet Fresa con Stevia 19 g",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41011000_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "OLIVOS DEL SUR",
+    "nombre": "Aceite de Oliva Extra Virgen 1L",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40598179_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "PROVENZAL",
+    "nombre": "Mezcla para Cebiche Caucau 60 g",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10337860_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "VALLENORTE",
+    "nombre": "Arroz Extra Valle Norte 750 g",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10472601_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "Sin Marca",
+    "nombre": "Hongo Seco Tratado Cuatro Estaciones 10 g",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10173650_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Salsa De Tomate x 145 gr",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43075960_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Gelatina naranja 100 gr",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42623349_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TROLLI",
+    "nombre": "Caramelos Neón Squiggles Bolsa 100 g",
+    "imagen": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40536606_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "esFlexible": "No"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "LAIVE",
+    "nombre": "Fourpack Gelatina Sabor Pina Yopi 480 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "POSTRES EN CASA",
+    "nombre": "Premezcla Brownie Melcochudo 350 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "PIKI",
+    "nombre": "Aderezo para Pollo 100 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "MUTTI",
+    "nombre": "Concentrado De Tomate 210 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "VALLE FERTIL",
+    "nombre": "Choclo Dulce Desgranado Valle Fértil 432 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "VALLE FERTIL",
+    "nombre": "Palmitos en Rodajas Gourmet Valle Fértil 450 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "Sin Marca",
+    "nombre": "King Kong Manjar San Roque 75 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Vinagreta Italiana x 240G g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "LA SERENISIMA",
+    "nombre": "DULCE DE LECHE ESTILO COLONIAL 400G",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "KATZEL",
+    "nombre": "Mezcla para Torta de Chocolate 510 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Ketchup 100 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Mayonesa 95 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "EL OLIVAR",
+    "nombre": "Vinagreta a la Mostaza 340 mL",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "WALIBI",
+    "nombre": "Salsa vinagreta",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "OLEICO",
+    "nombre": "ACEITE AEROSOL 170G",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Piña en Trozos 565 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "SPITZE",
+    "nombre": "Salsa de Ají Limo 165 gr",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "AMBROSOLI",
+    "nombre": "GOMAS AMBROSIA X 480GR",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "Sin Marca",
+    "nombre": "Salsa De Soya Champi Barcidda X 500 Ml",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "FLORIDA",
+    "nombre": "Filete de atún en agua y sal de 140 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Aceite de Oliva Extra Virgen 500 mL",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "REAL",
+    "nombre": "Filete de atún en agua light de 80 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "MARINELA",
+    "nombre": "Pinguinos Triple Chocolate Bolsa x 80 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Salsa de Aceituna",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "BADIA",
+    "nombre": "Pimienta negra molida 198 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "HELLMANN'S",
+    "nombre": "Mayonesa Hellmanns Light Squeeze Envase 340 mL",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "COSTENO",
+    "nombre": "Arroz Superior Costeño 750 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Pre-mezcla de brownie",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "BADIA",
+    "nombre": "Pimienta Negra Entera 63.8 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "UNIVERSAL",
+    "nombre": "HELADO CON STEVIA SABOR FRESA X50GR",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Ajonjolí 20 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "CASA VERDE",
+    "nombre": "Lentejas Aderezadas x 360 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "Sin Marca",
+    "nombre": "King Kong Manjarblanco San Roque 450 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "Frijol con Tocino 425 gr",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "TOTTUS",
+    "nombre": "VINAGRE BLANCO X 1 L",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  },
+  {
+    "categoria": "Despensa",
+    "subCategoria": "Despensa",
+    "marca": "MOLITALIA",
+    "nombre": "Fideo Canuto Pasta Corta 235 g",
+    "imagen": "Sin Imagen",
+    "esFlexible": "No se ha recibido una imagen"
+  }
+]

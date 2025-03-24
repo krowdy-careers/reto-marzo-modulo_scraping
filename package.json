@@ -1,0 +1,24 @@
+{
+    "dependencies": {
+        "@google-cloud/vision": "^5.1.0",
+        "axios": "^1.8.4",
+        "dotenv": "^16.4.7",
+        "puppeteer": "^24.4.0",
+        "puppeteer-cluster": "^0.24.0",
+        "puppeteer-extra": "^3.3.6",
+        "puppeteer-extra-plugin-stealth": "^2.11.2",
+        "restify": "^11.1.0"
+    },
+    "devDependencies": {
+        "@types/restify": "^8.5.12",
+        "nodemon": "^3.1.9",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.2"
+    },
+    "scripts": {
+        "start": "ts-node src/index.ts",
+        "build": "tsc",
+        "serve": "node dist/index.js",
+        "dev": "nodemon --ext ts --exec ts-node src/index.ts"
+    }
+}
