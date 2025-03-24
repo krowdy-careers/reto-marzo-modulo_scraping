@@ -75,9 +75,7 @@ export class TotusService {
 
                 return {
                   name: nameEl ? nameEl.textContent?.trim() : null,
-                  price: priceEl
-                    ? parseInt(priceEl.textContent?.trim() || "0")
-                    : 0,
+                  price: priceEl?.innerHTML,
                   imageUrl: imgEl ? imgEl.getAttribute("src") : null,
                   brand: brandEl ? brandEl.textContent?.trim() : null,
                   category: category || null,
