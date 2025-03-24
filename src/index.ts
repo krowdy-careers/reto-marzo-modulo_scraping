@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import { initCluster, cluster } from "./config/cluster";
 import { createServer } from "./config/server";
 import { screenshotRoutes } from "./routes/screenshot.routes";
-import { GEMINI_API_KEY, IAPROMPT } from "./config/constants";
+
 dotenv.config();
 async function startServer() {
   try {

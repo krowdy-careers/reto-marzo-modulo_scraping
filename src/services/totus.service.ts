@@ -5,7 +5,7 @@ import { Product, PageResult } from "../models/product.model";
 import { createObjectCsvWriter } from "csv-writer";
 import geminiService from "../services/gemini.service";
 import { autoScroll, downloadImageToBase64 } from "../utils/helpers";
-import { IAPROMPT } from "../config/constants";
+import { AI_PROMPT } from "../config/constants";
 
 export class TotusService {
   static async getProductsByUrl(
@@ -108,8 +108,8 @@ export class TotusService {
                 const imageBase64 = await downloadImageToBase64(
                   product.imageUrl
                 );
-                const prompt = IAPROMPT;
-                console.log("PROMPT", IAPROMPT);
+                const prompt = AI_PROMPT;
+                console.log("PROMPT", AI_PROMPT);
                 const isFlexible = await geminiService.analyzeImageFromBase64(
                   imageBase64,
                   "image/jpeg",
