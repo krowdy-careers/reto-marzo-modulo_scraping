@@ -3,10 +3,16 @@ import { ProductDto } from '../dto/product.dto.js';
 import { RawProductDto } from '../dto/raw-product.dto.js';
 
 export class ProductoService {
-  private openaiUtil: OpenAIUtil;
+  private cleanCategory(category: string): string {
+    return category.split('-')[0].trim();
+  }
 
-  constructor() {
-    this.openaiUtil = new OpenAIUtil();
+  private cleanImageUrl(url: string): string {
+    return url
+      .trim()
+      .replace(/w=\d+/, 'w=500')
+      .replace(/h=\d+/, 'h=500')
+      .replace(/fit=pad/, 'format=jpg');
   }
 
   async processProduct(
@@ -14,28 +20,26 @@ export class ProductoService {
     subcategory: string,
     rawProduct: RawProductDto,
   ): Promise<ProductDto> {
+    const imageUrl = this.cleanImageUrl(rawProduct.imageUrl);
+
     return {
-      category: category.split('-')[0].trim(),
+      category: this.cleanCategory(category),
       subcategory: subcategory.trim(),
       name: rawProduct.name.trim(),
       brand: rawProduct.brand.trim(),
-      image: rawProduct.image
-        .trim()
-        .replace(/w=\d+/, 'w=500')
-        .replace(/h=\d+/, 'h=500')
-        .replace(/fit=pad/, 'format=jpg'),
-      isFlexible: await this.isFlexible(rawProduct),
+      imageUrl: imageUrl,
+      isFlexible: await this.isFlexible(imageUrl),
     } as ProductDto;
   }
 
-  private async isFlexible(rawProductDto: RawProductDto): Promise<boolean> {
+  private async isFlexible(imageUrl: string): Promise<boolean> {
     const prompt =
       'Is the object in the image flexible? Answer only with true or false.\nAnswer: true or false';
-    const response = await this.openaiUtil.generateResponse(
+
+    const response = await OpenAIUtil.getInstance().generateResponse(
       prompt,
-      rawProductDto.image,
+      imageUrl,
     );
-    console.log(response);
     return response.toLowerCase() === 'true';
   }
 }

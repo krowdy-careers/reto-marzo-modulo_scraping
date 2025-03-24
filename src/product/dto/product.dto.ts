@@ -14,7 +14,7 @@ export class ProductDto {
   brand!: string;
 
   @IsUrl()
-  image!: string;
+  imageUrl!: string;
 
   @IsBoolean()
   isFlexible!: boolean;

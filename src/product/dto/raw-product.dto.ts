@@ -8,5 +8,5 @@ export class RawProductDto {
   brand!: string;
 
   @IsUrl()
-  image!: string;
+  imageUrl!: string;
 }

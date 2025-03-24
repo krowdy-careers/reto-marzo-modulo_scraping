@@ -13,7 +13,7 @@ export class CSVExporter {
         { id: 'subcategory', title: 'subcategory' },
         { id: 'name', title: 'name' },
         { id: 'brand', title: 'brand' },
-        { id: 'image', title: 'image' },
+        { id: 'imageUrl', title: 'imageUrl' },
         { id: 'isFlexible', title: 'isFlexible' },
       ],
     });

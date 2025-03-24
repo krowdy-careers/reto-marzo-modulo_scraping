@@ -1,13 +1,21 @@
 import OpenAI from 'openai';
 
 export class OpenAIUtil {
+  private static instance: OpenAIUtil;
   private openai: OpenAI;
 
-  constructor() {
+  private constructor() {
     this.openai = new OpenAI({
       baseURL: process.env.DOMAIN || '',
       apiKey: process.env.API_KEY || '',
     });
+  }
+
+  public static getInstance(): OpenAIUtil {
+    if (!OpenAIUtil.instance) {
+      OpenAIUtil.instance = new OpenAIUtil();
+    }
+    return OpenAIUtil.instance;
   }
 
   async generateResponse(prompt: string, imageUrl: string): Promise<string> {
@@ -33,6 +41,10 @@ export class OpenAIUtil {
         ],
         response_format: { type: 'json_object' },
       });
+
+      if (!completion.choices || completion.choices.length === 0) {
+        throw new Error('No choices returned from OpenAI');
+      }
 
       return completion.choices[0].message.content || '';
     } catch (error) {

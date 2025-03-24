@@ -8,8 +8,7 @@ export class ScraperService {
   private browser: Browser;
   private productService: ProductoService;
 
-  private baseUrl =
-    'https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa';
+  private baseUrl = process.env.BASE_URL || '';
 
   constructor(browser: Browser, productService: ProductoService) {
     this.browser = browser;
@@ -62,12 +61,12 @@ export class ScraperService {
       .descendant('img')
       .build();
 
-    const image = await page.$eval(
+    const imageUrl = await page.$eval(
       selector,
       (element) => element.getAttribute('src')?.trim() || '',
     );
 
-    return [subcategory, image];
+    return [subcategory, imageUrl];
   }
 
   private async getTotalPages(page: Page): Promise<number> {
@@ -118,7 +117,7 @@ export class ScraperService {
     for (const [index, productUrl] of productUrls.entries()) {
       try {
         const rawProduct = rawProducts[index];
-        const [subcategory, image] = await this.getProductDetails(
+        const [subcategory, imageUrl] = await this.getProductDetails(
           pageDetails,
           productUrl,
         );
@@ -126,7 +125,7 @@ export class ScraperService {
         const product = await this.productService.processProduct(
           category,
           subcategory,
-          { ...rawProduct, image } as RawProductDto,
+          { ...rawProduct, imageUrl } as RawProductDto,
         );
 
         products.push(product);

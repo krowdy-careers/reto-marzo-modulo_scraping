@@ -16,6 +16,7 @@ async function main() {
       defaultViewport: null,
       timeout: 60000,
     });
+
     const [page] = await browser.pages();
     await page.setRequestInterception(true);
 
