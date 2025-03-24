@@ -1,44 +1,124 @@
-**Assessment: Web Scraping de Productos de Despensa**
+# Tottus Product Scraper
 
-### **Objetivo:**
+Este proyecto implementa un web scraper que extrae información de productos de la sección "Despensa" del supermercado Tottus Perú, y utiliza inteligencia artificial para analizar las imágenes de los productos y determinar si tienen empaque flexible o rígido.
 
-Desarrollar un script utilizando una Chrome Extension o Puppeteer para scrapear los productos de la categoría "Despensa" en la siguiente URL:
-[https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa](https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa)
+## Características
 
-### **Requisitos:**
+- **Extracción de datos completa**: Obtiene categoría, subcategoría, nombre, marca, imagen (URL), precio y enlace de cada producto.
+- **Paginación automática**: Navega a través de todas las páginas disponibles de la categoría.
+- **Análisis de imagen con IA**: Utiliza un modelo de visión artificial para clasificar los empaques como flexibles o rígidos.
+- **Almacenamiento estructurado**: Guarda los datos en formato CSV para fácil análisis.
 
-1. **Extracción de Datos**
-   - El script debe obtener la siguiente información para cada producto:
-     - Categoría
-     - Subcategoría
-     - Nombre
-     - Marca
-     - Imagen (URL)
-2. **Paginación**
-   - Implementar la lógica necesaria para navegar a través de todas las páginas disponibles de la categoría.
-3. **Análisis de Imagen con IA**
-   - Enviar la imagen del producto a un algoritmo de IA para determinar si el empaque es flexible.
-   - Debería haber un campo configurable para ingresar la API Key de la API de IA o alguna librería de OCR utilizada.
-4. **Entrega de Datos**
-   - Guardar la información obtenida en un formato estructurado como JSON o CSV.
+## Requisitos previos
 
-### **Criterios de Evaluación:**
+- Node.js (v14 o superior)
+- NPM o Yarn
+- Acceso a internet
+- **Ollama** - Herramienta local para ejecutar modelos de IA
 
-- Correcta extracción de la información solicitada.
-- Manejo adecuado de la paginación.
-- Integración con un modelo de IA para la clasificación de empaques.
-- Limpieza y estructura del código.
-- Entrega de un archivo JSON o CSV con los datos extraídos.
+## Instalación
 
-### **Entrega:**
+1. Clonar este repositorio:
+   ```
+   git clone https://github.com/tuusuario/reto-puppeteer.git
+   cd reto-puppeteer
+   ```
 
-- Fecha Limite: Lunes 24 de Marzo hasta las 12:00PM
-- PR en GitHub con el código fuente.
-- Instrucciones claras para ejecutar el script.
-- Archivo JSON o CSV con los datos extraídos.
-- La entrega se realizará a través de un Pull Request (PR) en el repositorio de GitHub donde se encuentran estas indicaciones.
+2. Instalar las dependencias:
+   ```
+   npm install
+   ```
 
-**Notas:**
+3. **Instalar y configurar Ollama**:
+   - Descargar Ollama desde [https://ollama.ai/download](https://ollama.ai/download)
+   - Instalar siguiendo las instrucciones para tu sistema operativo
+   - Una vez instalado, descargar el modelo necesario ejecutando:
+     ```
+     ollama pull deepseek-r1:latest
+     ```
+   - Asegúrate de que Ollama esté en ejecución para el análisis de imágenes
 
-- Se recomienda usar Puppeteer para simular la navegación y evitar bloqueos de la página.
-- En caso de optar por una Chrome Extension, debe ser capaz de extraer y procesar la información sin interacción manual del usuario.
+## Configuración
+
+El proyecto utiliza un archivo de configuración ubicado en `src/config/config.js` donde puedes ajustar diferentes parámetros:
+
+- URLs de scraping
+- Número máximo de páginas a procesar
+- Rutas de salida para archivos
+- Configuración de tiempos de espera
+- Parámetros del navegador (headless, etc.)
+- **Configuración de Ollama**:
+  - `IMAGE_CONFIG.ollamaEndpoint`: URL del endpoint de Ollama (por defecto: http://localhost:11434/api/generate)
+  - `IMAGE_CONFIG.model`: Modelo a utilizar (por defecto: deepseek-r1:latest)
+  - `IMAGE_CONFIG.maxConcurrentAnalyses`: Número máximo de análisis concurrentes
+
+
+En `src/scraper/pageExtractor.js` se encuentra la configuración de la cantidad máxima de páginas:
+
+```javascript
+async function getTotalPages(browser, baseUrl) {
+  console.log('🔍 Detectando número total de páginas...');
+  
+  const page = await browser.newPage();
+  
+  try {
+    // Comenzamos con un umbral alto pero razonable
+    const maxPagesToCheck = 100;  // <----- Modificar para definir un límite
+    let lastValidPage = 1;
+```
+
+## Uso
+
+Para ejecutar el programa completo:
+
+```
+node index.js
+```
+
+Para ejecutar solo el scraping sin análisis de imágenes:
+
+```
+node src/scraper.js
+```
+
+Para analizar imágenes de un archivo CSV existente:
+
+```
+node src/imageAnalysis.js --input=ruta/al/archivo.csv
+```
+
+## Estructura del proyecto
+
+```
+reto-puppeteer/
+├── index.js                # Punto de entrada principal
+├── src/
+│   ├── scraper/         # Lógica de web scraping
+│   ├── imageAnalysis/    # Análisis de imágenes con IA
+│   ├── utils/              # Funciones de utilidad
+│   └── config/             # Configuraciones
+│       └── config.js       # Parámetros configurables
+```
+
+## Cómo funciona
+
+### Web Scraping
+
+El proceso de scraping utiliza Puppeteer para:
+
+1. Iniciar una instancia de navegador Chrome
+2. Navegar a la página de la categoría Despensa
+3. Extraer datos de los productos en la página actual
+4. Detectar y navegar a través de todas las páginas disponibles
+5. Manejar posibles errores, tiempos de espera o bloqueos
+6. Guardar los datos extraídos en formato CSV
+
+### Análisis de Imágenes
+
+El análisis de imágenes utiliza un servicio de IA para:
+
+1. Leer el archivo CSV con datos de productos
+2. Por cada producto, enviar la imagen al servicio de IA
+3. Proporcionar un prompt que instruye al modelo a identificar si el empaque es flexible o rígido
+4. Interpretar la respuesta del modelo
+5. Actualizar el CSV con una nueva columna "Tipo de Empaque" (Flexible/Rígido)

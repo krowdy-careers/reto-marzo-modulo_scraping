@@ -1,0 +1,25 @@
+{
+  "name": "reto-puppeteer",
+  "version": "1.0.0",
+  "description": "**Assessment: Web Scraping de Productos de Despensa**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/al-2100/reto-puppeteer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/al-2100/reto-puppeteer/issues"
+  },
+  "homepage": "https://github.com/al-2100/reto-puppeteer#readme",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "puppeteer": "^24.4.0"
+  }
+}

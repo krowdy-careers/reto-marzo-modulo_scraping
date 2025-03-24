@@ -1,0 +1,866 @@
+[
+  {
+    "category": "Despensa",
+    "subcategory": "Aceites",
+    "name": "Aceite Vegetal Premium 900 ml",
+    "brand": "PRIMOR",
+    "price": "S/ 11",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42757359_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113706602/aceite-vegetal-primor-premium-botella-x-900ml/113706603?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Six Pack Trozos De Atún En Aceite x 140 g",
+    "brand": "TOTTUS",
+    "price": "S/ 24.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43092552_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/120623057/six-pack-trozos-de-atun-en-aceite-tottus-x-140gr/120623059?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Azúcar y sustitutos",
+    "name": "Azúcar Rubia 5 kg",
+    "brand": "TOTTUS",
+    "price": "S/ 20.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40546554_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113705555/azucar-rubia-tottus-x5kg/113705556?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Arroz",
+    "name": "Arroz Extra Costeño 5 kg",
+    "brand": "COSTENO",
+    "price": "S/ 26.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10472604_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707306/arroz-extra-costeno-5-kg/113707307?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Aceites",
+    "name": "Aceite Vegetal Clásico 900 ml",
+    "brand": "PRIMOR",
+    "price": "S/ 10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42757360_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113706444/aceite-vegetal-primor-botella-x-900ml/113706446?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Gelatina Fresa 130 g",
+    "brand": "UNIVERSAL",
+    "price": "S/ 4.30",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43085642_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/120309510/gelatina-de-fresa-universal-130g/120309511?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Arroz Extra Añejo Bolsa x 10 Kg",
+    "brand": "GRAN CHALAN",
+    "price": "S/ 42.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43406236_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/136951384/arroz-extra-anejo-gran-chalan-x-10-kg/136951387?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Postres listos",
+    "name": "Gelatina Naranja Bolsa 160 g",
+    "brand": "ROYAL",
+    "price": "S/ 2.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40683733_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113708927/gelatina-royal-naranja-x160-gr/113708929?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Aceites",
+    "name": "Aceite de Soya 900 mL",
+    "brand": "PRECIO UNO",
+    "price": "S/ 5.80",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40594675_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707164/aceite-de-soya-precio-uno-x-900ml/113707167?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Pastas",
+    "name": "Fideos Spaghetti de 950 g",
+    "brand": "MOLITALIA",
+    "price": "S/ 5.20",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42828739_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707254/fideo-molitalia-spaghetti-bolsa-x-950g/113707255?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Pastas",
+    "name": "Sémola 200 g",
+    "brand": "MOLITALIA",
+    "price": "S/ 1",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40378811_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113706232/semola-molitalia-200-gr/113706233?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Sazonador Ajinomix Pop Corn Mantequilla Caja x 6 Sobres",
+    "brand": "Sin marca",
+    "price": "S/ 3.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43376546_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/133453436/AJINOMIX-POP-CORN-SABOR-MANTEQUILLA-36GR/133453440?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Otros",
+    "name": "Aceite de Girasol 900 mL",
+    "brand": "TOTTUS",
+    "price": "S/ 6.10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41297507_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113706214/aceite-de-girasol-tottus-x-900ml/113706215?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Premezclas",
+    "name": "Premezcla para Panqueques Caseros de 720 g",
+    "brand": "BLANCA FLOR",
+    "price": "S/ 9.29",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41462534_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113711622/mezcla-panq-casero-blanca-florx720gr/113711623?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Legumbres",
+    "name": "Pack de Menestras Tottus: 500 g de lentejas + 500 g de arvejas + 500 g de frijoles canarios",
+    "brand": "TOTTUS",
+    "price": "S/ 16.60",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41817187_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707144/tottus-menestras-lenteja-arbeja-y-frijol-canario-41817187/113707145?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Arroz",
+    "name": "Arroz Extra 5 kg",
+    "brand": "TOTTUS",
+    "price": "S/ 22.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40275956_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113706045/arroz-extra-tottus-x-5-kg/113706046?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sopas, cremas y caldos",
+    "name": "Sopa Instantánea Ajinomen Sabor gallina 80 g",
+    "brand": "AJINOMOTO",
+    "price": "S/ 2",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41074828_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707280/sopa-instantanea-gallinax80gr/113707281?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Aceites",
+    "name": "Aceite de Oliva Puro 500 mL",
+    "brand": "EL OLIVAR",
+    "price": "S/ 33.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10400901_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113713442/aceite-de-oliva-puro-x-500-ml-el-olivar/113713443?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Decoración y relleno",
+    "name": "Crema de Avellanas 371g",
+    "brand": "NUTELLA",
+    "price": "S/ 39.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42305027_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113714990/crema-de-avellanas-nutella-ferrero-x-371gr/113714991?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Trozos Atún en Aceite Vegetal y Sal 140g",
+    "brand": "FLORIDA",
+    "price": "S/ 5.80",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42327028_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/116029481/trozos-atun-florida-en-aceite-vegetal-y-sal-140g/116029482?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Keke de Plátano Rectangular",
+    "brand": "TOTTUS",
+    "price": "S/ 8.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41529738_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115776622/keke-de-platano-rectangular-tottus-hpa/115776625?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Pastas",
+    "name": "Spaghetti 950 g",
+    "brand": "DON VITTORIO",
+    "price": "S/ 7",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42722378_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115807056/pasta-trigo-don-vittorio-spaghetti-bolsa-x-950g/115807059?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Bolsa 250 gr",
+    "name": "Fideo Tornillo 250 g - Bolsa 250 gr",
+    "brand": "PRECIO UNO",
+    "price": "S/ 1.30",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41660786_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/118084561/precio-uno-tornillo-41660786/115848861?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Salsa Tare 300 g",
+    "brand": "ADELMI",
+    "price": "S/ 7.70",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41953384_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113714482/salsa-tare-adelmi-x-330-gr/113714483?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Fugde Heladero DoyPack x 200 g",
+    "brand": "BAZO VELARDE",
+    "price": "S/ 3.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40320354_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/123557782/fugde-heladero-doy-pack-200gr/123557783?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Especias",
+    "name": "Laurel Entero 7 g",
+    "brand": "TOTTUS",
+    "price": "S/ 2.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40559396_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113929037/tottus-laurel-x-7g/113929038?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Choclo Dulce Desgranado Lata 425 g",
+    "brand": "OLIVOS DEL SUR",
+    "price": "S/ 8.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43282797_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/129569087/choclo-dulce-desgranado-425gr/129569092?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Empaque 36 g",
+    "name": "SALSA BLANCA EN POLVO TOTTUSX 36 GR",
+    "brand": "TOTTUS",
+    "price": "S/ 2",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42677992_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115855953/salsa-blanca-en-polvo-tottusx-36-gr/115855957?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Display Chocolate Cookies and Creme Caja 36 Unidades x 43 g",
+    "brand": "HERSHEYS",
+    "price": "S/ 151.20",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43462339_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/139495994/hersheys-cnc-disp-x-36u-x-43g/139495995?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Pastas",
+    "name": "Sémola 200 g",
+    "brand": "TOTTUS",
+    "price": "S/ 0.60",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42257709_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707653/semola-tottus-x-200-gr/113707656?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Arroz",
+    "name": "Arroz Extra Costeño 750 g",
+    "brand": "COSTENO",
+    "price": "S/ 4.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10472603_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707117/arroz-extra-costeno-34-kg/113707119?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Cereales",
+    "name": "Chocoriz Kids 380G",
+    "brand": "TOTTUS",
+    "price": "S/ 13.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42673664_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/117001738/chocoriz-tottus-kids-380g/117001739?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Fideos Penne Rigate Premium de 500 g",
+    "brand": "TOTTUS",
+    "price": "S/ 5.40",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42326944_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/116239862/penne-rigate-tottus-x-500-gr/116239863?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "MANJARBLANCO X 500G",
+    "brand": "BONLE",
+    "price": "S/ 10.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42946518_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/117017111/bonle-manjarblanco-x-500g/117017112?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Salsa Vinagreta Clásica Valle Fértil 370 g",
+    "brand": "VALLE FERTIL",
+    "price": "S/ 9.80",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40532124_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113712430/vinagreta-clasica-valle-fertil-370g/113712431?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Mostaza amarilla",
+    "brand": "TOTTUS",
+    "price": "S/ 9.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41709611_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113930648/mostaza-amarilla-tottus-x-397g/113930649?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Panadería",
+    "name": "Mini Pingüinos Marinela - 10 unidades",
+    "brand": "BIMBO",
+    "price": "S/ 10.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42435555_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707244/mini-pinguino-x-200g/113707245?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Picarones Buñuelos 165 g",
+    "brand": "PROVENZAL",
+    "price": "S/ 11.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10337894_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115986426/picarones-c-miel-caja-x-165gr/115986427?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Pastas",
+    "name": "Fideos Spaghetti Libre de Gluten 400g",
+    "brand": "TOTTUS",
+    "price": "S/ 6.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42385021_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/114116430/spaghetti-libre-de-gluten-tottus-x-400-gr/114116431?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Arroz Extra 750 g",
+    "brand": "PACASMAYO",
+    "price": "S/ 4.70",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43254709_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/128324179/arroz-extra-pacasmayo-750g/128324181?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Salsas y pastas",
+    "name": "Puré de Tomate Pomarola Concentrado 110 g",
+    "brand": "MOLITALIA",
+    "price": "S/ 1.80",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42622118_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113712086/pure-tomate-pomarola-concentrado-doypack-x-110g/113712087?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Especias",
+    "name": "Orégano Pack 6 Unidades",
+    "brand": "SIBARITA",
+    "price": "S/ 1.10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40723197_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113706031/oregano-sibarita-x-35-gr-x-6-unid/113706032?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Aceites",
+    "name": "Aceite vegetal de 900 mL",
+    "brand": "TOTTUS",
+    "price": "S/ 6.10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42842306_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115776531/aceite-vegetal-tottus-x-900ml/115776532?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Mayonesa 475 g",
+    "brand": "ALACENA",
+    "price": "S/ 12.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10170543_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113712628/mayonesa-alacena-doypack-x-475g/113712629?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Chocolates",
+    "name": "Chocolate Kisses Cookies And Creme Empaque 102 g",
+    "brand": "HERSHEYS",
+    "price": "S/ 17.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42249510_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115874983/kisses-cookies-n-creme-102gr/115874984?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Fideo Spaghetti 500 g",
+    "brand": "GRANO DE ORO",
+    "price": "S/ 2.80",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40119582_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115848850/fideo-spaguetti-grano-de-orox500gr/115848851?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Lenteja Costeño 500 g",
+    "brand": "COSTENO",
+    "price": "S/ 5.40",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10167792_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115813339/costeno-lenteja-x-500-gr/115813340?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Fourpack Gelatina Sabor Naranja Yopi 480 g",
+    "brand": "LAIVE",
+    "price": "S/ 9.20",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43276601_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/129238077/4pack-gelatina-sabor-naranja-yopi-480g/129238078?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Arroz Costeño Añejo Extra Costeño 5Kg",
+    "brand": "COSTENO",
+    "price": "S/ 26.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43166081_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/124763714/arroz-anejo-extra-costeno-5kg/124763716?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "PASTA SPAGUETTI X 950G",
+    "brand": "TOTTUS",
+    "price": "S/ 5.40",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42987604_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/117250444/pasta-spaguetti-tottus-x-950g/117250445?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Aceites de Oliva",
+    "name": "Aceite de Oliva Extra Virgen 2 L",
+    "brand": "TOTTUS",
+    "price": "S/ 102.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42187245_01/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113712868/aceite-de-oliva-extra-virgen-tottus-x2l/113712869?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Hellmanns Mayonesa Original Doypack 475 g",
+    "brand": "HELLMANN'S",
+    "price": "S/ 14.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43254705_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/128324177/hellmanns-mayonesa-original-doypack-475g/128324180?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Féculas",
+    "name": "Harina de Maíz Blanco Precocido 1 kg",
+    "brand": "PAN",
+    "price": "S/ 8.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41058733_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/114405041/harina-de-maiz-bl-precocido-x-1kg/114405042?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Bolsa 30 g",
+    "name": "SALSA PESTO EN POLVO TOTTUSX 30 GR",
+    "brand": "TOTTUS",
+    "price": "S/ 2",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42677991_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115855858/salsa-pesto-en-polvo-tottusx-30-gr/115855859?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "UNIDAD",
+    "name": "CREMA DE AVELLANAS FERRERO X 220GR",
+    "brand": "NUTELLA",
+    "price": "S/ 29.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42305026_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707921/crema-de-avellanas-nutella-ferrero-x-220gr/113707922?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sopas, cremas y caldos",
+    "name": "Caldo Sabor Carne Doña Gusta 6 Unidades",
+    "brand": "AJINOMOTO",
+    "price": "S/ 1.10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/20128505_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113706548/dona-gusta-caldo-carne-en-polvo-cjx6-sachets/113706549?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Corazón Alcachofas En Salmuera Frasco x 410 g",
+    "brand": "OLIVOS DEL SUR",
+    "price": "S/ 17.60",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43442634_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/138899767/corazon-alca-salmu-olivos-del-sur-410-g/138899772?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Cobertura Bitter Negusa x 600 g",
+    "brand": "Sin marca",
+    "price": "S/ 14.99",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40330218_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/135053626/cobertura--bitter--negusa--600gr/135053632?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Vinagreta Finas Hierbas 200 mL",
+    "brand": "EL OLIVAR",
+    "price": "S/ 10.20",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10389129_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113714748/el-olivar-vinagreta-finas-hierbas-10389129/113714749?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Caja 22 g",
+    "name": "GELATINA SABOR NARANJA LIGHT X 22G",
+    "brand": "TOTTUS",
+    "price": "S/ 2.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41344044_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113936127/gelatina-sabor-naranja-light-tottus-x-22g/113936128?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Granola Bites Cinammon Roll Sumkha Envase x 100 g",
+    "brand": "Sin marca",
+    "price": "S/ 8.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43442662_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/138899826/granola-bites-cinammon-roll-sumkha-100g/138899828?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Sal de mar para cocina de 1 kg",
+    "brand": "MARINA",
+    "price": "S/ 2",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41458531_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707784/sal-marina-emsal-cocina-bolsa-x-1-kg/113707787?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Fideo Codo Mediano Rayado Bolsa 235g",
+    "brand": "MOLITALIA",
+    "price": "S/ 1.60",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43081766_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/120062270/fideo-molitalia-codo-mediano-rayado-bolsa-235g/120062271?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Arroz",
+    "name": "Arroz Extra 5 Kg",
+    "brand": "PAISANA",
+    "price": "S/ 23.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41470816_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113705624/arroz-paisana-extra-5-kg/113705625?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Legumbres",
+    "name": "Lentejas bebé de 1 kg",
+    "brand": "TOTTUS",
+    "price": "S/ 10.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42276924_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707629/tottus-lenteja-bebe-tottus-x-1kg/113707630?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Postres listos",
+    "name": "Helado Sabor Chocolate Con Stevia 50 g",
+    "brand": "UNIVERSAL",
+    "price": "S/ 5.10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41402033_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115724888/helado-con-stevia-sabor-chocolat-universal-x50gr/115724889?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Ketchup 380 g",
+    "brand": "TOTTUS",
+    "price": "S/ 5.90",
+    "imageUrl": "https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42887741-bsC_UMJm-medium.jpg",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/116652787/ketchup-tottus-x-380-g/116652788?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Especias",
+    "name": "Curry en Polvo 56.7 g",
+    "brand": "BADIA",
+    "price": "S/ 11.10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40537385_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113706534/frasco-curry-en-polvo-x-5670-gr-badia/113706535?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Salsa Hunts Picante Wings 550 g",
+    "brand": "HUNT",
+    "price": "S/ 17.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43254703_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/128324176/salsa-hunts-picante-wings-550g/128324178?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Salsa Bbq Original 510 g",
+    "brand": "TOTTUS",
+    "price": "S/ 9.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40694047_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115890595/salsa-barbecue-original-tottus-510g/115890596?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Mezcla Concentrada Leche Topping x 397 g",
+    "brand": "NESTLE",
+    "price": "S/ 5.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43392922_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/135908266/MEZCLA-CONCEN-LECHE-NESTLE-TOPPING-X397G/135908267?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Salsa Bbq Picante Valle Fértil 370 g",
+    "brand": "VALLE FERTIL",
+    "price": "S/ 10.30",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40532155_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115862182/salsa-bbq-picante-valle-fertil-420g/115862183?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Tallarines Shin Ramyun With Cheese 136 g",
+    "brand": "Sin marca",
+    "price": "S/ 9.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43385230_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/135315348/tallarines-shin-ramyun-with-cheese-136-g/135315350?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Conservas de comidas preparadas",
+    "name": "Lentejas con tocino 425 gr",
+    "brand": "TOTTUS",
+    "price": "S/ 7.10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42226195_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113712068/lentejas-con-tocino-tottus-x-425g/113712069?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "MAIZENA PURA FECULA DE MAIZ CAJA X 100G",
+    "brand": "DURYEA",
+    "price": "S/ 3",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/FalabellaPEAndCO/NoImage/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/122337549/maizena-duryea-pura-fecula-de-maiz-caja-x-100g/122337552?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Gelatina Cereza 130g",
+    "brand": "UNIVERSAL",
+    "price": "S/ 4.30",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43108314_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/121379371/gelatina-universa-cereza-130g/121379373?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Arroz Costeño Añejo Bolsa x 10 Kg",
+    "brand": "COSTENO",
+    "price": "S/ 49.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43406235_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/136951377/arroz-costeno-anejo-bolsa-x-10-kg/136951379?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Conservas de vegetales",
+    "name": "Conserva Vegetales Mixtos Envase 425 g",
+    "brand": "VALLE FERTIL",
+    "price": "S/ 8.80",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41875961_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113708959/vegetales-mixtos-valle-fertil-x-425g/113708960?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Hojuelas De Avena Original Doypack x 400 g",
+    "brand": "HUELLA VERDE",
+    "price": "S/ 19.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43442655_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/138899843/hojuelas-d-avena-orig-huella-verde-400gr/138899845?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Filete de Atún en Aceite de Girasol 140g",
+    "brand": "FLORIDA",
+    "price": "S/ 6.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43105017_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/121214526/filete-de-atun-en-aceite-de-girasol-140g/121214528?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Crema Huancaina al plato",
+    "brand": "NICOLINI",
+    "price": "S/ 7.60",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41905735_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113930314/crema-huancaina-nicolini-al-plato-doypack-x-190g/113930315?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Ajo Molido 350 g",
+    "brand": "PIKI",
+    "price": "S/ 12.10",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40444389_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113714961/molido-doy-pack-x-350-grs-piki-ajos/113714962?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Snack",
+    "name": "Aceituna Verde sin Pepa 240 g",
+    "brand": "TOTTUS",
+    "price": "S/ 9.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40765304_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/115939230/aceituna-verde-sin-pepa-x-240/115939231?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Conservas de vegetales",
+    "name": "Alcachofa a la parrilla 220 g",
+    "brand": "CASA VERDE",
+    "price": "S/ 8.70",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41278450_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113713549/alcachofa-grilled-casa-verde-x20gr/113713550?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Decoración y relleno",
+    "name": "Cobertura de chocolate con leche 200 g",
+    "brand": "LA IBERICA",
+    "price": "S/ 26.30",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41286321_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113714668/cobertura-de-leche-la-iberica-x200gr/113714669?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Féculas",
+    "name": "Harina de Maca Negra 200 g",
+    "brand": "Sin marca",
+    "price": "S/ 29.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41680490_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/114452722/harina-de-maca-negra-nuestra-salud-x-200gr/114452723?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Féculas",
+    "name": "Blend Nutricional 7 Semillas Clasico Doy Pack 200 g",
+    "brand": "NATURANDES",
+    "price": "S/ 10.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41040734_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/114407671/harina-de-7-semillas-naturandes-200g/114407673?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Conservas de vegetales",
+    "name": "Tapenade de Aceitunas y Alcachofa de 185 g",
+    "brand": "TOTTUS",
+    "price": "S/ 7.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42020971_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113707502/tapenade-aceitunas-con-alcachofa-tottus-x-185g/113707504?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Garbanzos x 340 g",
+    "brand": "CASA VERDE",
+    "price": "S/ 7.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43399921_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/136375511/GARBANZOS-CASA-VERDE-X340G/136375513?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "Trozos De Atún En Aceite Pack 12 x 140 g",
+    "brand": "TOTTUS",
+    "price": "S/ 49.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43194331_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/125967192/Trozos-De-Atun-En-Aceite-Tottus-Pack-12-x-140-g/125967193?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Snack",
+    "name": "Aceituna Botija sin Pepa 240 g",
+    "brand": "TOTTUS",
+    "price": "S/ 7.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40765303_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/114405767/aceituna-botija-sin-pepa-x-240/114405769?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Condimentos",
+    "name": "Aderezo Casero 1 kg",
+    "brand": "EL OLIVAR",
+    "price": "S/ 22.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40688062_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113712358/aderezo-el-olivar-casero-doy-pack-x-1kg/113712359?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Sin subcategoría",
+    "name": "MEZCLA POLVO GELATINA FRESA BOLSA X 120G",
+    "brand": "UMSHA",
+    "price": "S/ 4",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42840505_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/116982236/mezcla-polvo-umsha-gelatina-fresa-bolsa-x-120g/116982237?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Arroz",
+    "name": "Arroz Gourmet Extra Añejo Gran Chalán de 5 Kg",
+    "brand": "GRAN CHALAN",
+    "price": "S/ 27.50",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42093862_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113715516/arroz-gran-chalan-gourmet-extra-anejo-x-5kg/113715517?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Aceites",
+    "name": "Aceite de Oliva Carbonel Extra Virgen 1 L",
+    "brand": "CARBONELL",
+    "price": "S/ 69.80",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10172010_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/114404785/ac-oliv-carbonel-extvirg-pet-1-l/114404787?exp=tottus"
+  },
+  {
+    "category": "Despensa",
+    "subcategory": "Especias",
+    "name": "Nuez Moscada Molida 56.7 g",
+    "brand": "BADIA",
+    "price": "S/ 13.90",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10165086_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "link": "https://tottus.falabella.com.pe/tottus-pe/product/113928194/nuez-moscada-molida-x-5670-gr-badia/113928195?exp=tottus"
+  }
+]
