@@ -1,3 +1,6 @@
+# downloads files of products in JSON and CSV
+downloads/
+
 # Logs
 logs
 *.log
