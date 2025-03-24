@@ -1,0 +1,38 @@
+{
+  "name": "scraper-tottus",
+  "version": "1.0.0",
+  "description": "Extrae productos de la categoría 'Despensa' de Tottus, analiza el empaque con IA y exporta los datos en JSON y CSV.",
+  "main": "dist/scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/scraper.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krowdy-careers/reto-marzo-modulo_scraping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krowdy-careers/reto-marzo-modulo_scraping/issues"
+  },
+  "homepage": "https://github.com/krowdy-careers/reto-marzo-modulo_scraping#readme",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "form-data": "^4.0.2",
+    "json2csv": "^6.0.0-alpha.2",
+    "puppeteer": "^24.4.0",
+    "string-similarity": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/json2csv": "^5.0.7",
+    "@types/node": "^22.13.11",
+    "@types/puppeteer": "^5.4.7",
+    "@types/string-similarity": "^4.0.2",
+    "typescript": "^5.8.2"
+  }
+}

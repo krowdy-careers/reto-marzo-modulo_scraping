@@ -1,44 +1,50 @@
-**Assessment: Web Scraping de Productos de Despensa**
+# Assessment: Web Scraping de Productos de Despensa
 
-### **Objetivo:**
+## Objetivo
 
-Desarrollar un script utilizando una Chrome Extension o Puppeteer para scrapear los productos de la categoría "Despensa" en la siguiente URL:
-[https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa](https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa)
+Desarrollar un script en TypeScript utilizando Puppeteer para extraer la siguiente información de cada producto de la categoría **"Despensa"** en la URL:
 
-### **Requisitos:**
+- **Categoría**
+- **Subcategoría**
+- **Nombre**
+- **Marca**
+- **Imagen (URL)**
+- **Flexibilidad del empaque** (determinado mediante IA)
 
-1. **Extracción de Datos**
-   - El script debe obtener la siguiente información para cada producto:
-     - Categoría
-     - Subcategoría
-     - Nombre
-     - Marca
-     - Imagen (URL)
-2. **Paginación**
-   - Implementar la lógica necesaria para navegar a través de todas las páginas disponibles de la categoría.
-3. **Análisis de Imagen con IA**
-   - Enviar la imagen del producto a un algoritmo de IA para determinar si el empaque es flexible.
-   - Debería haber un campo configurable para ingresar la API Key de la API de IA o alguna librería de OCR utilizada.
-4. **Entrega de Datos**
-   - Guardar la información obtenida en un formato estructurado como JSON o CSV.
+Además, el script debe recorrer todas las páginas disponibles de la categoría, analizar la imagen de cada producto con Google Cloud Vision para determinar la subcategoría y si el empaque es flexible, y finalmente guardar la información extraída en archivos **JSON** y **CSV**.
 
-### **Criterios de Evaluación:**
+## Requisitos
 
-- Correcta extracción de la información solicitada.
-- Manejo adecuado de la paginación.
-- Integración con un modelo de IA para la clasificación de empaques.
-- Limpieza y estructura del código.
-- Entrega de un archivo JSON o CSV con los datos extraídos.
+- **Extracción de Datos:**  
+  Obtener los datos mencionados para cada producto.
 
-### **Entrega:**
+- **Paginación:**  
+  Recorrer todas las páginas disponibles usando el parámetro `page` en la URL.
 
-- Fecha Limite: Lunes 24 de Marzo hasta las 12:00PM
-- PR en GitHub con el código fuente.
-- Instrucciones claras para ejecutar el script.
-- Archivo JSON o CSV con los datos extraídos.
-- La entrega se realizará a través de un Pull Request (PR) en el repositorio de GitHub donde se encuentran estas indicaciones.
+- **Análisis de Imagen con IA:**
+    - Enviar la imagen del producto a Google Cloud Vision para obtener etiquetas (usando `LABEL_DETECTION`).
+    - Aplicar fuzzy matching entre las etiquetas detectadas y las candidate labels (subcategorías disponibles extraídas del DOM) para asignar la subcategoría.
+    - Determinar si el empaque es flexible usando candidate labels fijas: `["Flexible", "No flexible"]`.
 
-**Notas:**
+- **Entrega de Datos:**  
+  Guardar la información en formatos estructurados (JSON y CSV).
 
-- Se recomienda usar Puppeteer para simular la navegación y evitar bloqueos de la página.
-- En caso de optar por una Chrome Extension, debe ser capaz de extraer y procesar la información sin interacción manual del usuario.
+
+## Configuración y Preparación
+
+### 1. Habilitar la API de Google Cloud Vision
+
+1. Inicia sesión en [Google Cloud Console](https://console.cloud.google.com/).
+2. Crea o selecciona un proyecto.
+3. Habilita la **Vision API** en la biblioteca de APIs.
+4. Habilita la facturación para poder utilizar la API (incluso para el nivel gratuito).
+5. Ve a la sección de **Credenciales** y crea una nueva clave API.
+
+### 2. Configurar Variables de Entorno
+
+Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido (reemplaza los valores por los reales):
+
+```env
+GOOGLE_API_KEY=TU_CLAVE_API_REAL
+AI_ENDPOINT=https://vision.googleapis.com/v1/images:annotate
+
