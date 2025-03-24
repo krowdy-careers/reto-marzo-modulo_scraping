@@ -1,0 +1,5 @@
+{
+    "Region" : "Ubicacion regional AWS",
+    "AccessKeyId": "Clave de acceso AWS",
+    "SecretAccessKey": "Clave de acceso secreta AWS"
+}
