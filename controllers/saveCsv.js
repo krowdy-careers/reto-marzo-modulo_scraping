@@ -1,12 +1,26 @@
 const { request, response } = require("express");
 
-const saveCsvPost = (req = request, res = response) => {
-  const { id } = req.body;
+const fileService = require("../services/fileService");
 
-  res.json({
-    msg: "saveCsvPost",
-    id,
-  });
+const saveCsvPost = async (req = request, res = response) => {
+  const { data } = req.body;
+
+  try {
+    const result = await fileService.saveCsvToFile(data);
+
+    const fileUrl = `/files/csv/${result.filename}`;
+
+    res.status(200).json({
+      success: true,
+      message: "CSV saved successfully",
+      fileUrl,
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: error.message,
+    });
+  }
 };
 
 module.exports = {
