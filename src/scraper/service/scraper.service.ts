@@ -3,6 +3,7 @@ import { SelectorBuilder } from '../../utils/selector-builder.js';
 import { ProductDto } from '../../product/dto/product.dto.js';
 import { ProductoService } from '../../product/service/product.service.js';
 import { RawProductDto } from '../../product/dto/raw-product.dto.js';
+import { ERROR_MESSAGES } from '../../utils/messages.js';
 
 export class ScraperService {
   private browser: Browser;
@@ -129,9 +130,8 @@ export class ScraperService {
         );
 
         products.push(product);
-        console.log(product);
       } catch (error) {
-        console.error('Error obteniendo detalles:', error);
+        console.error(ERROR_MESSAGES.getDetails, error);
       }
     }
     return products;
@@ -146,8 +146,15 @@ export class ScraperService {
     const products: ProductDto[] = [];
     const category = await this.getPageCategory(page);
 
-    for (let pageNumber = 1; pageNumber <= totalPages; pageNumber++) {
-      console.log(`Scraping página ${pageNumber} de ${totalPages}...`);
+    const maxPage = parseInt(process.env.PAGE_LIMIT || '1');
+    const pagesToScrape = Math.min(totalPages, maxPage);
+
+    console.log(
+      `The category has a total of ${totalPages} pages and ${pagesToScrape} pages will be scraped`,
+    );
+
+    for (let pageNumber = 1; pageNumber <= pagesToScrape; pageNumber++) {
+      console.log(`Scraping page ${pageNumber} from ${pagesToScrape}...`);
 
       try {
         const productsFromPage = await this.getProductsFromPage(
@@ -158,7 +165,7 @@ export class ScraperService {
         );
         products.push(...productsFromPage);
       } catch (error) {
-        console.error(`Error scraping página ${pageNumber}:`, error);
+        console.error(`${ERROR_MESSAGES.scrapingPage} ${pageNumber}: `, error);
       }
     }
     await pageDetails.close();

@@ -1,4 +1,5 @@
 import OpenAI from 'openai';
+import { ERROR_MESSAGES } from './messages.js';
 
 export class OpenAIUtil {
   private static instance: OpenAIUtil;
@@ -42,14 +43,10 @@ export class OpenAIUtil {
         response_format: { type: 'json_object' },
       });
 
-      if (!completion.choices || completion.choices.length === 0) {
-        throw new Error('No choices returned from OpenAI');
-      }
-
       return completion.choices[0].message.content || '';
     } catch (error) {
-      console.error('Error interacting with OpenAI:', error);
-      return '{}';
+      console.error(ERROR_MESSAGES.openAIInteraction, error);
+      return '';
     }
   }
 }

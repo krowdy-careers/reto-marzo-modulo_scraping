@@ -2,6 +2,7 @@ import puppeteer from 'puppeteer';
 import { ProductoService } from './product/service/product.service.js';
 import { ScraperService } from './scraper/service/scraper.service.js';
 import { CSVExporter } from './utils/csv-exporter.js';
+import { ERROR_MESSAGES } from './utils/messages.js';
 
 async function main() {
   try {
@@ -36,19 +37,22 @@ async function main() {
     const productoService = new ProductoService();
     const scraperService = new ScraperService(browser, productoService);
 
-    console.log('Iniciando scraping...');
+    console.log('Initiating scraping...');
     const allProducts = await scraperService.getProductsFromCategory(page);
-    console.log('Proceso completado con éxito');
+
     if (allProducts.length > 0) {
       const csvExporter = new CSVExporter();
-      await csvExporter.exportarProductos(allProducts, 'products.csv');
-      console.log('Productos exportados a productos.csv');
-    } else {
-      console.log('No se encontraron productos para exportar.');
+      await csvExporter.exportarProductos(
+        allProducts,
+        `${process.env.FILE_NAME}.csv`,
+      );
     }
+
+    console.log('Process completed');
+
     await browser.close();
   } catch (error) {
-    console.error('Error en la ejecución:', error);
+    console.error(ERROR_MESSAGES.executionError, error);
     process.exit(1);
   }
 }
