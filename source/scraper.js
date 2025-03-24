@@ -205,19 +205,37 @@ async function GetProductstData(page, category, subcategory) {
     await page.waitForFunction(() => document.readyState === "complete");
     await new Promise(resolve => setTimeout(resolve, 3500));
 
-    await AutoScroll(page);
+    let attempts = 0;
+    let products = [];
 
-    const products = await page.evaluate(({ productItem, imageURL, productName, brandName, category, subcategory }) => {
-        return Array.from(document.querySelectorAll(productItem)).map(product => ({
-            Categoria : category, 
-            Subcategoria : subcategory,
-            Nombre: product.querySelector(productName)?.innerText.trim() || 'N/A',
-            Marca: product.querySelector(brandName)?.innerText.trim() || 'N/A',
-            Imagen: product.querySelector(imageURL)?.src || 'N/A',
-            Flexibilidad : "por definir..."
-        }));
-    }, { productItem, imageURL, productName, brandName, category, subcategory });
+    while (attempts < 10) {
+        if (attempts > 0) {
+            console.log(`Intento ${attempts}: Rehaciendo scroll para buscar imagenes...`);
+            await AutoScroll(page);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+        }
 
+        products = await page.evaluate(({ productItem, imageURL, productName, brandName, category, subcategory }) => {
+            return Array.from(document.querySelectorAll(productItem)).map(product => ({
+                Categoria: category,
+                Subcategoria: subcategory,
+                Nombre: product.querySelector(productName)?.innerText.trim() || 'N/A',
+                Marca: product.querySelector(brandName)?.innerText.trim() || 'N/A',
+                Imagen: product.querySelector(imageURL)?.src || 'N/A',
+                Flexibilidad: "por definir..."
+            }));
+        }, { productItem, imageURL, productName, brandName, category, subcategory });
+
+        const missingImages = products.some(product => product.Imagen === 'N/A');
+
+        if (!missingImages) {
+            break;
+        }
+
+        attempts++;
+    }
+
+    console.log(`Total de productos obtenidos: ${products.length}`);
     allProducts.push(...products);
 }
 
@@ -225,7 +243,7 @@ async function AutoScroll(page) {
     await page.evaluate(async () => {
         await new Promise(resolve => {
             let totalHeight = 0;
-            const distance = 20;
+            const distance = 25;
             const scrollDelay = 50;
 
             const timer = setInterval(() => {

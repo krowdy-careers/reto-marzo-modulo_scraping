@@ -1,0 +1,26 @@
+===== Instrucciones para usar este programa de scraping para el sitio web de Tottus (categorias de despensa) =====
+
+1. Una vez con el proyecto abierto en la raiz, abril la terminal. Ejecutaremos el comando: npm install
+
+2. Importadas las dependencias necesarias, vamos a entrar a la carpeta source usando en la terminal: cd source
+
+3. Antes de ejecutar el scraping, necesitaremos tener una cuenta de AWS:
+
+    -> Es necesario crear un usuario Root
+    -> En el buscado de AWS, colocar IAM y hacer click en "IAM Administrar el acceso a los recursos de AWS"
+    -> Buscar en el menu izquierdo la opcion Persona o Users
+    -> Darle click a crear usuario bajo estas indicaciones:
+        -> En el paso 1 crear un nombre de usuario es a eleccion, como userRekognition
+        -> En el paso 2 seleccionar la opcion Adjuntar politicas directamente, la politica a colocarle es: AmazonRekognitionFullAccess
+        -> En el paso 3 confirmar la creacion del usuario
+    -> Necesitamos crear la clave de acceso del usuario AWS. Para ello, entramos al usuario que hemos creado y le damos a la opcion Crear clave de acceso
+        -> En el paso 1 seleccionar la opcion Codigo local
+        -> En el paso 2 asignarle una etiqueta a eleccion
+        -> En el paso 3 descargar el archivo CSV
+    -> Del CSV descargado, colocar los valores respectivos en el archivo KeyAWS.json ubicado en la carpeta service (usualmente, la region es "us-east-1")
+
+4. Usando la terminal nos ubicamos en la carpeta source, y procedemos a ejecutar: node scraper.js
+
+5. Al finalizar, se generara un archivo llamado productos.json
+
+Nota: No minimizar la ventana del navegador durante el proceso de scraping, y ejecutar varias veces el script scraper.js puede incurrir en ligeros costos
