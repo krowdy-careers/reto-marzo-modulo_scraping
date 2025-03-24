@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@google-cloud/vision": "^5.1.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "puppeteer": "^24.4.0"
+  }
+}
