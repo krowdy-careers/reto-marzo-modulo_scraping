@@ -40,6 +40,6 @@ export class ProductoService {
       prompt,
       imageUrl,
     );
-    return response.toLowerCase() === 'true';
+    return response.toLowerCase().includes('true');
   }
 }
