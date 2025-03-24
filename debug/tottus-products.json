@@ -1,0 +1,482 @@
+[
+  {
+    "name": "PRIMOR",
+    "price": "S/  11  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42757359_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Aceite Vegetal Premium 900 ml",
+    "category": "J0101010104",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "No.\n"
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  24.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43092552_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Six Pack Trozos De Atún En Aceite x 140 g",
+    "category": "J0101020403",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "No\n"
+  },
+  {
+    "name": "FARAON",
+    "price": "S/  30  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41086701_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Arroz Extra Faraón de 5 Kg",
+    "category": "J0101010203",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "Sí\n"
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  20.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40546554_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Azúcar Rubia 5 kg",
+    "category": "J0101070102",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "Sí\n"
+  },
+  {
+    "name": "PRIMOR",
+    "price": "S/  10  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42757360_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Aceite Vegetal Clásico 900 ml",
+    "category": "J0101010104",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "No.\n"
+  },
+  {
+    "name": "MOLITALIA",
+    "price": "S/  1  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40378811_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Sémola 200 g",
+    "category": "J0101010802",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "Sí\n"
+  },
+  {
+    "name": "COSTENO",
+    "price": "S/  26.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10472604_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Arroz Extra Costeño 5 kg",
+    "category": "J0101010203",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "Sí\n"
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  22.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40275956_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Arroz Extra 5 kg",
+    "category": "J0101010203",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "Sí.\n"
+  },
+  {
+    "name": "GRAN CHALAN",
+    "price": "S/  42.50  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43406236_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Arroz Extra Añejo Bolsa x 10 Kg",
+    "category": "J0101010203",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "Sí\n"
+  },
+  {
+    "name": "ROYAL",
+    "price": "S/  2.50  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40683733_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Gelatina Naranja Bolsa 160 g",
+    "category": "J0101080504",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "Sí\n"
+  },
+  {
+    "name": "BLANCA FLOR",
+    "price": "S/  9.29  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41462534_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Premezcla para Panqueques Caseros de 720 g",
+    "category": "J0101080604",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "Sí\n"
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  6.10  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41297507_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Aceite de Girasol 900 mL",
+    "category": "J0101010104",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "No.\n"
+  },
+  {
+    "name": "PRECIO UNO",
+    "price": "S/  5.80  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40594675_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Aceite de Soya 900 mL",
+    "category": "J0101010104",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "No.\n"
+  },
+  {
+    "name": "PROVENZAL",
+    "price": "S/  11.50  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10337894_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Picarones Buñuelos 165 g",
+    "category": "J0101080604",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": "No\n"
+  },
+  {
+    "name": "MOLITALIA",
+    "price": "S/  1.80  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42622118_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Puré de Tomate Pomarola Concentrado 110 g",
+    "category": "J0101011107",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  0.60  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42257709_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Sémola 200 g",
+    "category": "J0101010802",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "HERSHEYS",
+    "price": "S/  17.50  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42249510_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Chocolate Kisses Cookies And Creme Empaque 102 g",
+    "category": "J0101060202",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  16.60  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41817187_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Pack de Menestras Tottus: 500 g de lentejas + 500 g de arvejas + 500 g de frijoles canarios",
+    "category": "J0101010707",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  2  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42677992_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "SALSA BLANCA EN POLVO TOTTUSX 36 GR",
+    "category": "J0101011109",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "",
+    "price": "S/  3.50  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43376546_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Sazonador Ajinomix Pop Corn Mantequilla Caja x 6 Sobres",
+    "category": "J0101010531",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "MOLITALIA",
+    "price": "S/  5.20  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42828739_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Fideos Spaghetti de 950 g",
+    "category": "J0101010801",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "SIBARITA",
+    "price": "S/  1.10  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40723197_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Orégano Pack 6 Unidades",
+    "category": "J0101010502",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "EL OLIVAR",
+    "price": "S/  33.50  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10400901_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Aceite de Oliva Puro 500 mL",
+    "category": "J0101010102",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  13.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42673664_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Chocoriz Kids 380G",
+    "category": "J0101070307",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "VALLE FERTIL",
+    "price": "S/  9.80  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40532124_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Salsa Vinagreta Clásica Valle Fértil 370 g",
+    "category": "J0101010414",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "PACASMAYO",
+    "price": "S/  4.70  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43254709_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Arroz Extra 750 g",
+    "category": "J0101010203",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "PIKI",
+    "price": "S/  12.10  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40444389_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Ajo Molido 350 g",
+    "category": "J0101010409",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "BIMBO",
+    "price": "S/  10.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42435555_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Mini Pingüinos Marinela - 10 unidades",
+    "category": "J0101070805",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "DON VITTORIO",
+    "price": "S/  7  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42722378_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Spaghetti 950 g",
+    "category": "J0101010801",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "NICOLINI",
+    "price": "S/  5.70  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41619614_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Tallarín Grueso Empaque 1 kg",
+    "category": "J0101010801",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "PAN",
+    "price": "S/  8.50  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41058733_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Harina de Maíz Blanco Precocido 1 kg",
+    "category": "J0101080801",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  2  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42677991_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "SALSA PESTO EN POLVO TOTTUSX 30 GR",
+    "category": "J0101011109",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "COSTENO",
+    "price": "S/  5.40  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10167792_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Lenteja Costeño 500 g",
+    "category": "J0101010704",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "AJINOMOTO",
+    "price": "S/  2  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41074828_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Sopa Instantánea Ajinomen Sabor gallina 80 g",
+    "category": "J0101011203",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "NUTELLA",
+    "price": "S/  39.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42305027_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Crema de Avellanas 371g",
+    "category": "J0101080304",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "UNIVERSAL",
+    "price": "S/  4.30  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43085642_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Gelatina Fresa 130 g",
+    "category": "J0101080504",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  9.20  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42129574_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Pre Mezcla Galleta de Avena con Chispas Sabor Chocolate",
+    "category": "J0101080602",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  6.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42385021_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Fideos Spaghetti Libre de Gluten 400g",
+    "category": "J0101010802",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "AJINOMOTO",
+    "price": "S/  1.10  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/20128505_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Caldo Sabor Carne Doña Gusta 6 Unidades",
+    "category": "J0101010531",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "MOLITALIA",
+    "price": "S/  1.60  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43081766_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Fideo Codo Mediano Rayado Bolsa 235g",
+    "category": "J0101010804",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  5.40  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42987604_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "PASTA SPAGUETTI X 950G",
+    "category": "J0101010801",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "GRANO DE ORO",
+    "price": "S/  2.80  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40119582_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Fideo Spaghetti 500 g",
+    "category": "J0101010801",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "LAIVE",
+    "price": "S/  9.20  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43276601_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Fourpack Gelatina Sabor Naranja Yopi 480 g",
+    "category": "J0101080504",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  9.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41709611_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Mostaza amarilla",
+    "category": "J0101010406",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  6.10  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42842306_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Aceite vegetal de 900 mL",
+    "category": "J0101010104",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "ALACENA",
+    "price": "S/  12.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/10170543_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Mayonesa 475 g",
+    "category": "J0101010405",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "OLIVOS DEL SUR",
+    "price": "S/  8.90  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43282797_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Choclo Dulce Desgranado Lata 425 g",
+    "category": "J0101020504",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  },
+  {
+    "name": "TOTTUS",
+    "price": "S/  2.50  ",
+    "imageUrl": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40559396_1/width=240,height=240,quality=70,format=webp,fit=pad",
+    "brand": "Laurel Entero 7 g",
+    "category": "J0101010502",
+    "seller": "Por Tottus",
+    "url": null,
+    "isFlexible": null
+  }
+]

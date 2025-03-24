@@ -1,44 +1,87 @@
-**Assessment: Web Scraping de Productos de Despensa**
+# 🛒 Scraper de Productos Tottus
 
-### **Objetivo:**
+Este es un pequeño scraper que extrae información de productos desde la web de **Tottus**. Se ejecuta **desde la consola**, sin abrir ventanas ni interfaces gráficas, y permite obtener datos fácilmente mediante una API.
 
-Desarrollar un script utilizando una Chrome Extension o Puppeteer para scrapear los productos de la categoría "Despensa" en la siguiente URL:
-[https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa](https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa)
+---
 
-### **Requisitos:**
+## ⚙️ Configuración
 
-1. **Extracción de Datos**
-   - El script debe obtener la siguiente información para cada producto:
-     - Categoría
-     - Subcategoría
-     - Nombre
-     - Marca
-     - Imagen (URL)
-2. **Paginación**
-   - Implementar la lógica necesaria para navegar a través de todas las páginas disponibles de la categoría.
-3. **Análisis de Imagen con IA**
-   - Enviar la imagen del producto a un algoritmo de IA para determinar si el empaque es flexible.
-   - Debería haber un campo configurable para ingresar la API Key de la API de IA o alguna librería de OCR utilizada.
-4. **Entrega de Datos**
-   - Guardar la información obtenida en un formato estructurado como JSON o CSV.
+Antes de empezar, asegúrate de tener un archivo `.env` con la siguiente configuración:
 
-### **Criterios de Evaluación:**
+```ini
+PORT=3000  # Puerto donde se ejecuta el servidor
+TARGET_URL=https://tottus.falabella.com.pe/tottus-pe/category/CATG14773/Quitamanchas-y-Blanqueadores-de-ropa  # URL de la categoría de productos a scrapear
+MAX_PAGES=5  # Número máximo de páginas a scrapear
+GEMINI_API_KEY=tu_api_key  # Clave de la API de Gemini
+```
 
-- Correcta extracción de la información solicitada.
-- Manejo adecuado de la paginación.
-- Integración con un modelo de IA para la clasificación de empaques.
-- Limpieza y estructura del código.
-- Entrega de un archivo JSON o CSV con los datos extraídos.
+---
 
-### **Entrega:**
+## 🚀 Cómo usarlo
 
-- Fecha Limite: Lunes 24 de Marzo hasta las 12:00PM
-- PR en GitHub con el código fuente.
-- Instrucciones claras para ejecutar el script.
-- Archivo JSON o CSV con los datos extraídos.
-- La entrega se realizará a través de un Pull Request (PR) en el repositorio de GitHub donde se encuentran estas indicaciones.
+El scraper se ejecuta en el puerto definido en `.env` y puedes hacer scraping de dos maneras:
 
-**Notas:**
+### 1️⃣ Usando la configuración por defecto
 
-- Se recomienda usar Puppeteer para simular la navegación y evitar bloqueos de la página.
-- En caso de optar por una Chrome Extension, debe ser capaz de extraer y procesar la información sin interacción manual del usuario.
+Si no envías parámetros en la URL, el scraping se hará en la **URL definida en `.env`** con el número de páginas configurado.
+
+- **Endpoint:**
+  ```http
+  GET http://localhost:3000/totusScrape
+  ```
+
+### 2️⃣ Definiendo manualmente la URL y el número de páginas
+
+Si quieres scrapear otra URL o cambiar el número de páginas, puedes pasarlos como parámetros en la petición.
+
+- **Endpoint:**
+  ```http
+  GET http://localhost:3000/totusScrape?url=<URL>&maxPages=<NÚMERO>
+  ```
+- **Ejemplo:**
+  ```http
+  GET http://localhost:3000/totusScrape?url=https://tottus.falabella.com.pe/tottus-pe/category/CATG14773/Quitamanchas-y-Blanqueadores-de-ropa&maxPages=3
+  ```
+
+---
+
+## ⚠️ Limitaciones
+
+- La **API de Gemini** permite analizar hasta **19 imágenes por minuto**. Si se excede este límite, algunos productos podrían no tener información.
+- **No abre ventanas ni interfaces gráficas**, todo se ejecuta en la consola.
+- Algunas páginas pueden tener protecciones anti-scraping que impidan obtener los datos.
+
+---
+
+## 📌 Requisitos
+
+Para que todo funcione correctamente, asegúrate de tener instalado:
+
+- **Node.js** y **npm**
+- Un archivo `.env` correctamente configurado
+
+---
+
+## ▶️ Ejecución
+
+### 1️⃣ Instalar dependencias
+
+```bash
+npm install
+```
+
+### 2️⃣ Iniciar el servidor
+
+```bash
+npm run dev
+```
+
+### 3️⃣ Realizar solicitudes GET
+
+Puedes hacer scraping usando la configuración por defecto o definiendo manualmente la URL y el número de páginas.
+
+---
+
+## 📜 Nota
+
+Este scraper fue creado con fines educativos y debe usarse **respetando los términos de servicio** del sitio web de Tottus.
