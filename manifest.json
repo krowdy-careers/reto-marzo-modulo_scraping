@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tottus Web Scraper",
+  "version": "1.0",
+  "description": "Extensión para extraer datos de productos de Tottus.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://tottus.falabella.com.pe/*"],
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  }
+}

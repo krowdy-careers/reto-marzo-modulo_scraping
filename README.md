@@ -1,44 +1,33 @@
-**Assessment: Web Scraping de Productos de Despensa**
+# Tottus Web Scraper - Chrome Extension
 
-### **Objetivo:**
+Este proyecto es una **extensión de Chrome** que realiza **web scraping** de productos de la categoría **Despensa** en Tottus Perú. Además, usa **IA gratuita** para analizar imágenes y determinar si el empaque del producto es flexible.
 
-Desarrollar un script utilizando una Chrome Extension o Puppeteer para scrapear los productos de la categoría "Despensa" en la siguiente URL:
-[https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa](https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa)
+## Funcionalidades
 
-### **Requisitos:**
+✔ **Scraping** de productos en la categoría Despensa.  
+✔ **Manejo de paginación** para extraer todos los productos.  
+✔ **Análisis de imágenes con IA** para detectar empaques flexibles.  
+✔ **Exportación de datos** en formato JSON.  
+✔ **Interfaz de usuario simple y estilizada**.
 
-1. **Extracción de Datos**
-   - El script debe obtener la siguiente información para cada producto:
-     - Categoría
-     - Subcategoría
-     - Nombre
-     - Marca
-     - Imagen (URL)
-2. **Paginación**
-   - Implementar la lógica necesaria para navegar a través de todas las páginas disponibles de la categoría.
-3. **Análisis de Imagen con IA**
-   - Enviar la imagen del producto a un algoritmo de IA para determinar si el empaque es flexible.
-   - Debería haber un campo configurable para ingresar la API Key de la API de IA o alguna librería de OCR utilizada.
-4. **Entrega de Datos**
-   - Guardar la información obtenida en un formato estructurado como JSON o CSV.
+---
 
-### **Criterios de Evaluación:**
+## Instalación
 
-- Correcta extracción de la información solicitada.
-- Manejo adecuado de la paginación.
-- Integración con un modelo de IA para la clasificación de empaques.
-- Limpieza y estructura del código.
-- Entrega de un archivo JSON o CSV con los datos extraídos.
+### 1. Instalar Dependencias
 
-### **Entrega:**
+Este proyecto usa Puppeteer para el scraping y una IA gratuita para el análisis de imágenes. Instala las dependencias con:
 
-- Fecha Limite: Lunes 24 de Marzo hasta las 12:00PM
-- PR en GitHub con el código fuente.
-- Instrucciones claras para ejecutar el script.
-- Archivo JSON o CSV con los datos extraídos.
-- La entrega se realizará a través de un Pull Request (PR) en el repositorio de GitHub donde se encuentran estas indicaciones.
+```bash
+npm install puppeteer
+```
 
-**Notas:**
+### 3. Ejecutar el Servidor Local
 
-- Se recomienda usar Puppeteer para simular la navegación y evitar bloqueos de la página.
-- En caso de optar por una Chrome Extension, debe ser capaz de extraer y procesar la información sin interacción manual del usuario.
+El scraping se ejecuta en un servidor local:
+
+```bash
+node src/scraping/scraper.js
+```
+
+### 4. Carga la Extensión en Chrome
