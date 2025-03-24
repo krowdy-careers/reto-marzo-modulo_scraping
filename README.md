@@ -1,44 +1,84 @@
-**Assessment: Web Scraping de Productos de Despensa**
+🛒 Tottus Scraper Server
+Servidor web para scraping de productos de Tottus con análisis de empaques usando Google Cloud Vision API.
 
-### **Objetivo:**
+🚀 Características Principales
 
-Desarrollar un script utilizando una Chrome Extension o Puppeteer para scrapear los productos de la categoría "Despensa" en la siguiente URL:
-[https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa](https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa)
+Scraping automatizado de productos
 
-### **Requisitos:**
+Análisis de empaques flexibles mediante IA
 
-1. **Extracción de Datos**
-   - El script debe obtener la siguiente información para cada producto:
-     - Categoría
-     - Subcategoría
-     - Nombre
-     - Marca
-     - Imagen (URL)
-2. **Paginación**
-   - Implementar la lógica necesaria para navegar a través de todas las páginas disponibles de la categoría.
-3. **Análisis de Imagen con IA**
-   - Enviar la imagen del producto a un algoritmo de IA para determinar si el empaque es flexible.
-   - Debería haber un campo configurable para ingresar la API Key de la API de IA o alguna librería de OCR utilizada.
-4. **Entrega de Datos**
-   - Guardar la información obtenida en un formato estructurado como JSON o CSV.
+API REST para consultas
 
-### **Criterios de Evaluación:**
+Almacenamiento automático en JSON
 
-- Correcta extracción de la información solicitada.
-- Manejo adecuado de la paginación.
-- Integración con un modelo de IA para la clasificación de empaques.
-- Limpieza y estructura del código.
-- Entrega de un archivo JSON o CSV con los datos extraídos.
+Integración con Google Cloud Vision
 
-### **Entrega:**
+📦 Requisitos Previos
 
-- Fecha Limite: Lunes 24 de Marzo hasta las 12:00PM
-- PR en GitHub con el código fuente.
-- Instrucciones claras para ejecutar el script.
-- Archivo JSON o CSV con los datos extraídos.
-- La entrega se realizará a través de un Pull Request (PR) en el repositorio de GitHub donde se encuentran estas indicaciones.
+Node.js 18+
 
-**Notas:**
+Cuenta de Google Cloud con:
 
-- Se recomienda usar Puppeteer para simular la navegación y evitar bloqueos de la página.
-- En caso de optar por una Chrome Extension, debe ser capaz de extraer y procesar la información sin interacción manual del usuario.
+Vision API habilitada
+
+Facturación activada
+
+Archivo de credenciales JSON (service account)
+
+🛠️ Instalación
+
+
+git clone https://github.com/JairGZZ/reto-marzo-modulo_scraping.git
+cd tottus-server
+npm install
+npm run build  # Opcional para compilar TypeScript
+⚙️ Configuración
+
+Crea un proyecto en Google Cloud Console y habilita Vision API
+
+Descarga el archivo JSON de tu cuenta de servicio
+
+Crea un archivo .env con:
+
+
+PORT=3000
+CREDENTIALS_PATH= nombre-de-tu-archivo.json ()
+🖥️ Ejecución
+
+
+npm run dev  # Modo desarrollo (con reinicio automático)
+npm start    # Modo producción
+Resultados guardados en: data/productos-YYYY-MM-DDTHH-mm-ss-sssZ.json
+
+📡 API Endpoints
+Ingrese a su navegar favorito y pegue http://localhost:8080/scrape luego de instalar las dependencias e iniciar el proyecto
+GET /scrape - Devuelve productos analizados. Ejemplo de respuesta:
+
+
+{
+  "success": true,
+  "data": [{
+    "name": "Aceite Vegetal Premium 900 ml",
+    "price": "S/ 11",
+    "empaqueFlexible": "No",
+    "marca" : "PRIMOR"
+  }]
+}
+⚠️ Notas Importantes
+
+Costos: Google Cloud Vision API tiene tarifas (ver precios en cloud.google.com/vision/pricing)
+
+Primer producto detectado con empaque flexible:
+
+
+{"name": "Fourpack Gelatina Sabor Naranja Yopi 480 g", "empaqueFlexible": "Sí"}
+🔍 Solución de Problemas
+
+Error PERMISSION_DENIED: Verifica facturación y permisos de la cuenta de servicio
+
+Timeout en scraping: Aumenta el valor de timeout en tottus.service.ts
+
+
+
+📄 Licencia
+MIT License - Detalles en el archivo LICENSE
