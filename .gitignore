@@ -134,3 +134,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# dotenv environment variable files
+.env
+.env.*
+
+# API key file (no compartirla en el repositorio)
+vision-ai-project-454719-7f4bedd0d863.json
