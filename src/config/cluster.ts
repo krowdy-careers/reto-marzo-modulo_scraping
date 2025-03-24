@@ -19,7 +19,7 @@ export const initCluster=async () =>{
             puppeteer,
             timeout:120000,
             puppeteerOptions:{
-             headless:false,
+             headless:true,
              args:[
                  '--no-sandbox',
                      '--start-maximized',
