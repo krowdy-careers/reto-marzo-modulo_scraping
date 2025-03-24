@@ -3,6 +3,7 @@ import fs from 'fs';
 import { analyzeImages } from './recognition.js';
 
 const urlWeb = 'https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa';
+
 const categoryClass = 'button.jsx-2929192365.facet-with-mini-pods';
 const nextButtonID = '#testId-pagination-top-arrow-right';
 
