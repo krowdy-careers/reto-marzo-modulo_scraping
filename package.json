@@ -1,0 +1,23 @@
+{
+  "name": "reto-marzo-modulo_scraping",
+  "version": "1.0.0",
+  "description": "*Assessment: Web Scraping de Productos de Despensa*",
+  "main": "scraper.js",
+  "scripts": {
+    "dev": "node scraper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raf4el12/reto-marzo-modulo_scraping.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raf4el12/reto-marzo-modulo_scraping/issues"
+  },
+  "homepage": "https://github.com/raf4el12/reto-marzo-modulo_scraping#readme",
+  "dependencies": {
+    "puppeteer": "^24.4.0"
+  }
+}
