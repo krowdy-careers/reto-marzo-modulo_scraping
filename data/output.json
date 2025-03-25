@@ -1,0 +1,434 @@
+[
+  {
+    "category": "J0101010104",
+    "subCategory": "Sin subcategoría",
+    "name": "Aceite Vegetal Premium 900 ml",
+    "brand": "PRIMOR",
+    "image": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/42757359_1/width=480,height=480,quality=70,format=webp,fit=pad",
+    "price": "S/  11",
+    "isFlexiblePackaging": false
+  },
+  {
+    "category": "J0101020403",
+    "subCategory": "G11120402",
+    "name": "Six Pack Trozos De Atún En Aceite x 140 g",
+    "brand": "TOTTUS",
+    "image": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/43092552_1/width=480,height=480,quality=70,format=webp,fit=pad",
+    "price": "S/  24.90",
+    "isFlexiblePackaging": false
+  },
+  {
+    "category": "J0101010203",
+    "subCategory": "Sin subcategoría",
+    "name": "Arroz Extra Faraón de 5 Kg",
+    "brand": "FARAON",
+    "image": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41086701_1/width=480,height=480,quality=70,format=webp,fit=pad",
+    "price": "S/  30",
+    "isFlexiblePackaging": false
+  },
+  {
+    "category": "J0101070102",
+    "subCategory": "Sin subcategoría",
+    "name": "Azúcar Rubia 5 kg",
+    "brand": "TOTTUS",
+    "image": "https://tottus.falabella.com.pe/cdn-cgi/imagedelivery/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/40546554_1/width=480,height=480,quality=70,format=webp,fit=pad",
+    "price": "S/  19.90",
+    "isFlexiblePackaging": false
+  },
+  {
+    "category": "J0101010203",
+    "subCategory": "G11070104",
+    "name": "Arroz Extra Costeño 5 kg",
+    "brand": "COSTENO",
+    "image": null,
+    "price": "S/  26.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010104",
+    "subCategory": "Sin subcategoría",
+    "name": "Aceite Vegetal Clásico 900 ml",
+    "brand": "PRIMOR",
+    "image": null,
+    "price": "S/  10",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101080504",
+    "subCategory": "G11030605",
+    "name": "Gelatina Fresa 130 g",
+    "brand": "UNIVERSAL",
+    "image": null,
+    "price": "S/  4.30",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010203",
+    "subCategory": "G11070104",
+    "name": "Arroz Extra Añejo Bolsa x 10 Kg",
+    "brand": "GRAN CHALAN",
+    "image": null,
+    "price": "S/  42.50",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101080504",
+    "subCategory": "Sin subcategoría",
+    "name": "Gelatina Naranja Bolsa 160 g",
+    "brand": "ROYAL",
+    "image": null,
+    "price": "S/  2.50",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010104",
+    "subCategory": "G11020101",
+    "name": "Aceite de Soya 900 mL",
+    "brand": "PRECIO UNO",
+    "image": null,
+    "price": "S/  5.80",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010801",
+    "subCategory": "Sin subcategoría",
+    "name": "Fideos Spaghetti de 950 g",
+    "brand": "MOLITALIA",
+    "image": null,
+    "price": "S/  5.20",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010802",
+    "subCategory": "G11030505",
+    "name": "Sémola 200 g",
+    "brand": "MOLITALIA",
+    "image": null,
+    "price": "S/  1",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010531",
+    "subCategory": "G11080201",
+    "name": "Sazonador Ajinomix Pop Corn Mantequilla Caja x 6 Sobres",
+    "brand": "Sin Marca",
+    "image": null,
+    "price": "S/  3.50",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010104",
+    "subCategory": "Sin subcategoría",
+    "name": "Aceite de Girasol 900 mL",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  6.10",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101080604",
+    "subCategory": "Sin subcategoría",
+    "name": "Premezcla para Panqueques Caseros de 720 g",
+    "brand": "BLANCA FLOR",
+    "image": null,
+    "price": "S/  9.29",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010707",
+    "subCategory": "G11030704",
+    "name": "Pack de Menestras Tottus: 500 g de lentejas + 500 g de arvejas + 500 g de frijoles canarios",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  16.60",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010203",
+    "subCategory": "Sin subcategoría",
+    "name": "Arroz Extra 5 kg",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  22.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101011203",
+    "subCategory": "Sin subcategoría",
+    "name": "Sopa Instantánea Ajinomen Sabor gallina 80 g",
+    "brand": "AJINOMOTO",
+    "image": null,
+    "price": "S/  2",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010102",
+    "subCategory": "G11020101",
+    "name": "Aceite de Oliva Puro 500 mL",
+    "brand": "EL OLIVAR",
+    "image": null,
+    "price": "S/  33.50",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101080304",
+    "subCategory": "G11030607",
+    "name": "Crema de Avellanas 371g",
+    "brand": "NUTELLA",
+    "image": null,
+    "price": "S/  39.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101020403",
+    "subCategory": "G11120402",
+    "name": "Trozos Atún en Aceite Vegetal y Sal 140g",
+    "brand": "FLORIDA",
+    "image": null,
+    "price": "S/  5.80",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0602020102",
+    "subCategory": "Sin subcategoría",
+    "name": "Keke de Plátano Rectangular",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  8.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010801",
+    "subCategory": "Sin subcategoría",
+    "name": "Spaghetti 950 g",
+    "brand": "DON VITTORIO",
+    "image": null,
+    "price": "S/  7",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010804",
+    "subCategory": "Sin subcategoría",
+    "name": "Fideo Tornillo 250 g - Bolsa 250 gr",
+    "brand": "PRECIO UNO",
+    "image": null,
+    "price": "S/  1.30",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010413",
+    "subCategory": "Sin subcategoría",
+    "name": "Salsa Tare 300 g",
+    "brand": "ADELMI",
+    "image": null,
+    "price": "S/  7.70",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101080304",
+    "subCategory": "G11030607",
+    "name": "Fugde Heladero DoyPack x 200 g",
+    "brand": "BAZO VELARDE",
+    "image": null,
+    "price": "S/  3.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010502",
+    "subCategory": "G11080204",
+    "name": "Laurel Entero 7 g",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  2.50",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101020504",
+    "subCategory": "G11100301",
+    "name": "Choclo Dulce Desgranado Lata 425 g",
+    "brand": "OLIVOS DEL SUR",
+    "image": null,
+    "price": "S/  8.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101011109",
+    "subCategory": "G11080305",
+    "name": "SALSA BLANCA EN POLVO TOTTUSX 36 GR",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  2",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101060405",
+    "subCategory": "G11140401",
+    "name": "Display Chocolate Cookies and Creme Caja 36 Unidades x 43 g",
+    "brand": "HERSHEYS",
+    "image": null,
+    "price": "S/  151.20",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010802",
+    "subCategory": "Sin subcategoría",
+    "name": "Sémola 200 g",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  0.60",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010203",
+    "subCategory": "G11070104",
+    "name": "Arroz Extra Costeño 750 g",
+    "brand": "COSTENO",
+    "image": null,
+    "price": "S/  4.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101070307",
+    "subCategory": "G11070202",
+    "name": "Chocoriz Kids 380G",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  13.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010804",
+    "subCategory": "Sin subcategoría",
+    "name": "Fideos Penne Rigate Premium de 500 g",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  5.40",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101080304",
+    "subCategory": "Sin subcategoría",
+    "name": "MANJARBLANCO X 500G",
+    "brand": "BONLE",
+    "image": null,
+    "price": "S/  10.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010414",
+    "subCategory": "G11080310",
+    "name": "Salsa Vinagreta Clásica Valle Fértil 370 g",
+    "brand": "VALLE FERTIL",
+    "image": null,
+    "price": "S/  9.80",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010406",
+    "subCategory": "G11080310",
+    "name": "Mostaza amarilla",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  9.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101070805",
+    "subCategory": "Sin subcategoría",
+    "name": "Mini Pingüinos Marinela - 10 unidades",
+    "brand": "BIMBO",
+    "image": null,
+    "price": "S/  10.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101080604",
+    "subCategory": "Sin subcategoría",
+    "name": "Picarones Buñuelos 165 g",
+    "brand": "PROVENZAL",
+    "image": null,
+    "price": "S/  11.50",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010802",
+    "subCategory": "G11030505",
+    "name": "Fideos Spaghetti Libre de Gluten 400g",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  6.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010203",
+    "subCategory": "G11070104",
+    "name": "Arroz Extra 750 g",
+    "brand": "PACASMAYO",
+    "image": null,
+    "price": "S/  4.70",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101011107",
+    "subCategory": "Sin subcategoría",
+    "name": "Puré de Tomate Pomarola Concentrado 110 g",
+    "brand": "MOLITALIA",
+    "image": null,
+    "price": "S/  1.80",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010502",
+    "subCategory": "G11080204",
+    "name": "Orégano Pack 6 Unidades",
+    "brand": "SIBARITA",
+    "image": null,
+    "price": "S/  1.10",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010104",
+    "subCategory": "Sin subcategoría",
+    "name": "Aceite vegetal de 900 mL",
+    "brand": "TOTTUS",
+    "image": null,
+    "price": "S/  6.10",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010405",
+    "subCategory": "G11080310",
+    "name": "Mayonesa 475 g",
+    "brand": "ALACENA",
+    "image": null,
+    "price": "S/  12.90",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101060202",
+    "subCategory": "G11040401",
+    "name": "Chocolate Kisses Cookies And Creme Empaque 102 g",
+    "brand": "HERSHEYS",
+    "image": null,
+    "price": "S/  17.50",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010801",
+    "subCategory": "Sin subcategoría",
+    "name": "Fideo Spaghetti 500 g",
+    "brand": "GRANO DE ORO",
+    "image": null,
+    "price": "S/  2.80",
+    "isFlexiblePackaging": null
+  },
+  {
+    "category": "J0101010704",
+    "subCategory": "Sin subcategoría",
+    "name": "Lenteja Costeño 500 g",
+    "brand": "COSTENO",
+    "image": null,
+    "price": "S/  5.40",
+    "isFlexiblePackaging": null
+  }
+]
