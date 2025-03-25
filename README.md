@@ -1,44 +1,87 @@
-**Assessment: Web Scraping de Productos de Despensa**
+## Instalación
 
-### **Objetivo:**
+Instalar módulos
 
-Desarrollar un script utilizando una Chrome Extension o Puppeteer para scrapear los productos de la categoría "Despensa" en la siguiente URL:
-[https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa](https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa)
+```
+yarn install
+```
 
-### **Requisitos:**
+Crear dist folder
 
-1. **Extracción de Datos**
-   - El script debe obtener la siguiente información para cada producto:
-     - Categoría
-     - Subcategoría
-     - Nombre
-     - Marca
-     - Imagen (URL)
-2. **Paginación**
-   - Implementar la lógica necesaria para navegar a través de todas las páginas disponibles de la categoría.
-3. **Análisis de Imagen con IA**
-   - Enviar la imagen del producto a un algoritmo de IA para determinar si el empaque es flexible.
-   - Debería haber un campo configurable para ingresar la API Key de la API de IA o alguna librería de OCR utilizada.
-4. **Entrega de Datos**
-   - Guardar la información obtenida en un formato estructurado como JSON o CSV.
+```
+yarn build
+```
 
-### **Criterios de Evaluación:**
+Opcional (para realizar build en cada cambio)
 
-- Correcta extracción de la información solicitada.
-- Manejo adecuado de la paginación.
-- Integración con un modelo de IA para la clasificación de empaques.
-- Limpieza y estructura del código.
-- Entrega de un archivo JSON o CSV con los datos extraídos.
+```
+yarn start
+```
 
-### **Entrega:**
+## Capturas
 
-- Fecha Limite: Lunes 24 de Marzo hasta las 12:00PM
-- PR en GitHub con el código fuente.
-- Instrucciones claras para ejecutar el script.
-- Archivo JSON o CSV con los datos extraídos.
-- La entrega se realizará a través de un Pull Request (PR) en el repositorio de GitHub donde se encuentran estas indicaciones.
+![alt text](for-readme/ui.png)
+![alt text](for-readme/ui-1.png)
+![alt text](for-readme/ui-2.png)
 
-**Notas:**
+## Scraping
 
-- Se recomienda usar Puppeteer para simular la navegación y evitar bloqueos de la página.
-- En caso de optar por una Chrome Extension, debe ser capaz de extraer y procesar la información sin interacción manual del usuario.
+Información de cada producto:  
+     - Categoría  
+     - Subcategoría  
+     - Nombre  
+     - Marca  
+     - Imagen (URL)  
+
+
+## Navegación para el scraping
+
+1. Se obtienen las categorías (links) y subcategorías(botones) del DOM usando content script.
+
+2. Se guardan en extension storage con propiedades como text, id, href, visited = false
+
+3. Hay 1 btn para empezar a navegar
+- En click visitará cada category page y cambiará su visited de false a true.
+- Para pasar de página inicial a page 2, page 3,... actualizará el url usando `?page=n`.
+- Cuando termine de visitar todas las páginas de la categoria. Pasará a la siguiente categoria que tenga visited:false
+
+- Cuando no haya más, se detendrá y regresará a Despensa
+
+4. Notas: La categoría de Harinas tiene muchas páginas, por lo que se limitó a 5. Ver en popup.ts 
+
+
+## Scraping de una sola página  
+
+1. Ya existía, pero ahora los ítems persisten en la tabla y escuchan por cada cambio en storage  
+2. También tiene un btn para descargarlos como .csv
+
+## Descarga CSV
+
+1. Click en btn para descargar
+2. Hay una función reutilizable para eso, donde colocas como parámetros el nombre del objeto que está guardado en extensión storage y el nombre para el archivo .csv (separado por ; en lugar de , para no generar columnas de más con categorías que lleven ,)
+
+## Deepseek
+
+- Menús contextuales (2) agregados.
+- Se abrirá chat de deepseek en nuevo tab y se pegará y dará click en Enter automáticamente.
+- Solo necesita tener iniciada sesión en <https://chat.deepseek.com/> (no API)
+
+1. Envía cualquier texto seleccionado (por ejemplo un row de la tabla del popup, o texto cualquier web) junto al prompt `¿El empaque de este producto es flexible?:`
+Da la respuesta más probable.
+
+![alt text](for-readme/texto-a-chat.png)
+![alt text](for-readme/text-a-chat-2.png)
+
+
+
+2. Convierte cualquier imagen a base64 y la envía junto a un prompt `Esta es la imagen en base64, ¿puedes describir que representa? :`
+No, no puede saber qué imagen es.
+
+![alt text](for-readme/img-a-chat.png)
+![alt text](for-readme/img-a-chat-2.png)
+![alt text](for-readme/img-a-chat-3.png)
+
+
+O puedes enviarle el csv a deepseek y decirle :  
+`¿Puedes devolverme este mismo archivo, agregando la columna de 'Empaque Flexible' (cuyos valores pueden ser 'SI' o 'NO' dependiendo del producto y características?`   
+(VER DEEPSEEK.CSV CON COLUMNA EXTRA)
