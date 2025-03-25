@@ -13,7 +13,9 @@
       ],
       "js": [
         "contentScript.js",
-        "deepseek.js",
+        "deepseek.js"
+      ],
+      "css": [
         "styles.css"
       ],
       "type": "module",
